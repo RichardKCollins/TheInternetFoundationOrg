@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment on Pictor Open Source Radio Telescope &#8211; Recommendations - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Comment on Pictor Open Source Radio Telescope &#8211; Recommendations</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-07-02</span>
+       &bull; <a href="/?p=1742" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p><a href="https://www.youtube.com/watch?v=70plmWJDt2k">https://www.youtube.com/watch?v=70plmWJDt2k</a></p>
+<p>Open Source: <a href="https://github.com/0xCoto/PICTOR">https://github.com/0xCoto/PICTOR</a></p>
+<p>Website: <a href="https://www.pictortelescope.com/">https://www.pictortelescope.com/</a></p>
+<p>Please leave the settings and all form fields. Don&#8217;t clear them. Just leave them the same as the last observation.  I am having to re-enter them ever time I make a request.  I am making series of requests.  Many people might.  Tell them how many files they will receive, how many records per file, and the units and purpose.</p>
+<p>Put column headers in the csv files. You can add headers to explain the columns by using a # in the first column to indicate header then use tab separators. Use tab separators through out. That is the default for Excel, even if they still say &#8220;csv&#8221;. CSV is NOT a standard. When you copy and paste from Excel, it is tab separated &#8211; because then you don&#8217;t have to write infinite recursion for quoted strings. Just a single tab between fields, line feed separating records. Human and Excel readable header lines.</p>
+<p>Show the consequences of choices. How many data points in the time series will be given for the selection? What are the limits for your processor? How fast could you provide small FFT records. You show the waterfall but do not provide that time series. If someone is looking at adjacent frequencies to the center, you are only providing summary statistics.</p>
+<p>&#8220;Raw&#8221; means the original readings. What you are providing is a summary statistics in your time series. A computed value based on the FFT, which comes from the sampled time series data. &#8220;Raw&#8221; would be the 2.4 MegaSamplesPerSeconds or whatever the user selected. It could be requested &#8212; without FFT processing.</p>
+<p>You might want to call the time series you provide now &#8220;Power time series&#8221; or &#8220;Relative Power time series&#8221; But you need to make an effort to put it on an absolute basis. Your histogram for &#8220;Total Power Distribution&#8221; could be useful as a summary time series. That could be an option instead of FFT. It can be computed and stored very fast, and could give a summary of the counts of levels (and first and second derivatives) many times a second. For 2.4 Msps, groups of 10,000 samples can be summarized by max, min, mean, mode and range. And counts by level. 10,000 samples per statistical summary record at 2,400,000 sps is 240 statistical frames per second.</p>
+<p>I think you have many times no one is online. I recommend you run continuously and put summaries of 24 hours online. And have that data available for download. If people are going to learn to analyze radio telescope data, they are not going to learn much, except operator clicks and settings, with smal samples. But if you have complete analyses of your own, and a way for others to also share what they are doing, that means permanent archives and truly raw data. The global networks that share usually provide 1 record per second data streams. If you are seeing the whole zenith sky in 86164.091 seconds at 8.9 degrees, there will be some times when things pass through that focus. You cannot point, but you can record everything and index events.</p>
+<p>The true value of sensors is when you use arrays of them to look at something together. You only see the zenith in a small disk or zone. Anyone at your latitude anywhere on earth will see close to the same with time offsets. If the sources are stable, then stacking the results from many sensors will begin to strip local variations. If you record continuously the path of the sky you see will repeat fairly closely. So you need to be careful to track the precise time of records. The spectrum (at least part of it) much be stable over many observations of the same spot in the earths&#8217; rotation.</p>
+<p>During the day there will be clouds, and those clouds can also be tracked. If one drifts overhead that should be observable. I haven&#8217;t checked. I am just asking you to think about every possible data stream and observation your global users might want to squeeze out of your single data stream. Put &#8220;donate&#8221; and &#8220;support&#8221; online. And try linking to all related individuals and groups doing the same thing. If you don&#8217;t have time for this, I can understand. But a good basic approach to data sharing, sensor nework correlation, global and regional projects is as important for people to learn as how to fill in forms and click buttons and how to read standard graphs and datasets.</p>
+<p>Sincere regards,<br />
+Richard Collins, Director, The Internet Foundation</p>
+<hr />
+<p>A few small things:</p>
+<p>On your page at https://pictortelescope.com/observe</p>
+<p>1. Put a link at the top left to get back to the main page.<br />
+2. Your picture is pretty, but rather large. An option to hide it? Then there would be room to plot the results online. Do you know how to use the canvas in javascript?<br />
+3. &#8220;Number of Channels&#8221; is incorrect. What that number is being used for is to set the number of &#8220;frequency intervals for the FFT. Fewer frequencies means faster FFTs. For rough surveys where you are mainly looking for variations in total power and a bit about its character, 256 is not bad.</p>
+<p>When you set 256 frequencies, 100 bins, 2.4 Msps (MegaSamplesPerSecond is correct since it is the ADC sampling rate, not a frequency. Easier to keep separate.) then there will be 256 frequencies in the spectrum, a time series with about 28000 estimates of relative power. 2,400.000/256 is 9375 FFTs per second. For five minutes (300 seconds) and reporting in blocks of 100 seconds (not sure) that is three sets of 100. Three time 9375 is 28125 &#8211; and I get 28122 entries. So that &#8220;Number of Bins&#8221; is &#8220;Blocks for processing&#8221; and used internally for telling the user how many points they will get in their time series.</p>
+<p>So (300 seconds/Blocksize 100) = three blocks of 9375 samples each.</p>
+<p>If you had faster sampling (34.7 Msps?) then higher rates of gathering data, but you are going to be limited because of the FFT. You can store and process later, use low latency fast processing on the board, go to statistical counting methods that work rather well. Or let someone else try it at another location and share their algorithms, their data.</p>
+<p>I looked at your map from -7 degrees Declination to 70 degrees by 24 hours. If you left it running since November 2020, that is 6 months or about 180 frames. With two receivers (NOTE SPELLING you have &#8220;reciever&#8221; on your fourm) you should be able to scan. Control the gain, and the processing. Use the &#8220;standard map of sources&#8221; to set the absolute levels. Check every minute of the rotation to check for absolute levels.Everything else is local to earth, the path, or the source.</p>
+<p>Map of Much of the Whole Sky from Pictor:</p>
+<p>https://camo.githubusercontent.com/cd79c432a540118aead87c462799f2cd6039d25af6c9136ec813cad5bc109d94/68747470733a2f2f692e696d6775722e636f6d2f7059674d4168572e706e67</p>
+<p>GitHub where you can see the image in context: https://github.com/0xCoto/PICTOR</p>
+<p>If you can put in a continuous station, ask for donations and support. Share the data, set up projects for people to work together. You cannot teach this (talking heads and memorization, reading text) It has to be done with tools and data and people putting things together where everyone can see.</p>
+<p>Sincere regards,<br />
+Richard Collins, Director, The Internet Foundation</p>
+<hr />
+<p>Please post a 24 hours &#8220;standard zenith scan&#8221; and keep history that each person requesting a zenith scan for a particular time can get copies of previous scans of the same part of the sky for comparison purposes.</p>
+<p>If you scan continuously, you can show the &#8220;To date&#8221; map of the sky, the weekly (about 7 rotations or frames) and daily (last sidereal day or two.</p>
+<p>I don&#8217;t know if you have space for another one. You can also post your FFT time series, compare it to the standard radio sky map and report on variations. That includes drifts, shifts, level changes, sferics, magnetic storms, weather. clouds, ionosphere and anything else anyone can think of &#8212; it is all going online. I know, that is why I am recommending you do these things. Start with good global Internet collaborative methods from the beginning and you will not have to learn them on the fly.</p>
+<p>I cannot tell if the general downward trend in the power level time series is from the devices heating up. Of it that is the real trend in the source strength as you scan the current sidereal rotation.  Please provide the &#8220;normal scan&#8221; as a base. There are ways to calibrate that.</p>
+<p>There is no way for me to attach files or images here. Nor to CC anyone. If there were lots of comments, this will get lost rather quickly. Private messaging is possible YouTube, as well as topic communities by the millions for millions. But YouTube has not quite grown up yet. There are some large sites and resources, but I track those as well, and they usually lose interest, and then let the ball drop. You don&#8217;t have Pateon here on YouTube and you don&#8217;t have &#8220;donate&#8221; on your GitHub. Nor on your website. Now you have to cobble it together yourself. There are groups that might help with that.</p>
+<p>Richard Collins, Director, The Internet Foundation</p>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

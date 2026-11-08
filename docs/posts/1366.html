@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMT is now Atomica &#8211; Please also try making gravitational sensors - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">IMT is now Atomica &#8211; Please also try making gravitational sensors</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-05-19</span>
+       &bull; <a href="/?p=1366" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <div>IMT sent me a note about their name change. I wrote back to ask them to work harder on gravitational imaging sensors which can be adaptations of MEMS accelerometer technologies they are already familiar with.</div>
+<div></div>
+<div>I am encouraging anyone who makes MEMS accelerometers and inertial sensors to at least try to prepare for gravitational sensor networks.  My rather informed guess is that the first ones to address it seriously will lay the foundation for gravitational sensor networks and commodity products. It will be possible to make cell phone gravitational GPS units.  It won&#8217;t happen over night, but it will probably happen.  Whether MEMS or electrochemical, or atom interferometer or some other of the various approaches will get most of that market, I don&#8217;t know.   I want it to calibrate the weather and climate models. And that fits the needs of every small city and community and location on earth. So &#8220;professional&#8221; versions of gravitational detector arrays, gravitational imaging array, gravitational scanners, gravitational communications networks &#8211; will likely grow quickly once people see that &#8220;it is not hard, just tedious&#8221;.</div>
+<div></div>
+<div>Stephen,</div>
+<div></div>
+<div style="padding-left: 40px;">I appreciate the announcement.  For many years I have been tracking MEMS sensor developments for the Internet Foundation.  Particularly what I term &#8220;gravitational imaging array&#8221; applications.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">There are a few MEMS gravimeters now.  Liang Cheng Tu in China and the Middlemiss group at University of Glasgow.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">Essentially they adapted cell phone MEMS accelerometers to be sensitive enough to track the tidal gravity signal from the sun and moon.  To put that in perspective, the superconducting gravimeters (SGs) that are still the gold standard in that type of gravitational monitoring have slightly better sensitivity at 1 sample per second. But the SGs use liquid helium cooling and superconducting levitation and cost closer to a quarter million each, when the China group had talked about putting their in cell phones.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The reason I know this is because about 20 years ago i wanted to measure the speed of gravity.  When I went to calibrate the SG network, I found they were not on an absolute standard.  So I used the sun and moon tidal signal as a universal reference.  Because the SGs are single axis instruments, I could not extend that work. So I went through all the seismometers in the IRIS.edu network to find that the broadband, three axis seismometers &#8211; operating as accelerometers &#8211; were sensitive enough on all three axes to calibrate to the three orthogonal parts of the sun moon tidal signal.  It is the suns acceleration at the station minus the sun on the center of the earth, plus the moons gravitational acceleration on the station minus the moon on the center of the earth.  To that vector add the centrifugal acceleration at the station from earth rotation. That vector dot into the station North East Vertical unit vectors to get the three time series for the expected acceleration at the instrument.  It only requires a linear regression (an offset and scale factor) to fit the SG and seismometer signals.  It is so precise that tiny variations in location and orientation of the device shows up as change in the sum of squares of the residuals.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">For permanent stations or faster sampling rates and higher sensitivities, this means that portable devices like MEMS gravimeters, and atom interferometer chip gravimeter, and compact electrochemical gravimeters (there are also Bose Einstein, &#8220;quantum&#8221;, Mossbauer and other groups working on different technologies for the same thing) &#8211; a three axis device will be sensitive enough to use for &#8220;gravitational GPS&#8221;. To solve for location and orientation of the sensor.  And gravity is not affected by ionospheric electron density variations, and gravity can penetrate the earth and ocean.  So there are practical consequences.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">My interest is to use the gravimeter arrays to calibrate the seismic models of the earth interior. The signals from larger earthquakes are strong enough the gravitational potential changes due to seismic waves &#8211; traveling at the speed of light and gravity (they are identical, not just close, but identical) &#8211; can be monitored in real time, imaged and tracked.  The seismic (acoustic) models are well developed and they can be used as reference signals to get the gravimeter arrays calibrated.  Then the gravitational arrays feed back their different gravitational view to the seismic network.  It is 3D models and precise timing.  The Japan earthquake registered a gravity signal on the SG and the broadband seismometer network &#8211; exactly the only instruments capable and running then. That shows the the gravity signal can be used that way.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">Jan Harms and others at LIGO spend a lot of time trying to suppress the earth and solar system gravitational &#8220;noise&#8221;.  I keep trying to get them to call it a &#8220;gravitational signal&#8221; since it has great value for earthquake early warning, calibrating many earth based geophysical and meteorological sensor networks and models. The global climate groups cannot get fine grained 3D and time constraints on their local models, and the raders, lidars, ground sensors, drone and ballon sensors all are gradually getting merged to constrain the local models. But about 5% of the SG signal is atmosphere. To put that in perspective, about 95% of the SG signal is pure Newtonian vector tidal gravity. That is why it makes a good gravitational reference for global coordination and for gravitational GPS applications. The about 4-10% of the signal is meteorological &#8211; moisture and rain and convection and wind and density.  It is not hard to estimate the signal at the station for any given atmospheric model (or ocean model. The waves and ocean tides and currents also have gravitational signals)</div>
+<blockquote><p>I want it to scan the interiors of the sun, moon, earth and plants and other bodies. And to extend the range of gravitational imaging and application to the same range as electromagnetism &#8211; from roughly picoHertz to ZettaHertz.  For many practical things gravitational and electromagnetic technologies are identical. They use the same mathematical and computer modeling methods for processing and visualizing and calibrating. The same nano and pico scale sensing, amplification, same types of ADCs, low latency raw data processing, data storage and communications.  Same archiving and global sharing, same methods of online collaboration, modeling and teaching and sharing.</p></blockquote>
+<div style="padding-left: 40px;">At GravityNotes.Org are a lot of notes mostly related to &#8220;earthquake early warning&#8221; and &#8220;elastogravity&#8221; (a rather unfortunate name one group called the signals that come from seismic waves (acoustic displacements in the earth) as gravitational signals at the speed of light and gravity to the sensor arrays.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 80px;"><a href="https://gravitynotes.org/HsinchuSample.xlsx">https://gravitynotes.org/HsinchuSample.xlsx</a></div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">At the top is a link to a spreadsheet that shows what one axis of the sun moon tidal signal looks like at a SG station and how well it fits &#8212; with only two numbers &#8211; an offset and a scale factor. In the spreadsheet that is cells M17 and M19.  I have a tiny correction that is needed for months long studies where I corrected for earth moon barycenter rotation.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">You can just see the calculated sun moon reference signal in red underneath the station reading &#8211; after they have been scaled to fit this month long dataset.  The red residual at the bottom is almost all atmospheric and some ocean and earth tides if you are near the ocean.  After you remove the sun moon part the atmosphere gets easier to use. And with clusters of three axis gravimeters easier still.  It is a fair amount of data.  But the regressions can do done continuously with the processors in cell phone, tablets, desktops. GPS need satellites, transmitters, receivers and constant attention to exact timing.  I do not know what technology will win out.   I think the atom interferometer methods could be very good, but the groups are slow and expensive. The Bose Einstein have some good methods but all academic.  The Mossbauer is actually measuring the changes in the gravitational potential itself.  I consider it is measuring a change in the index of refraction of the vacuum induced by the changing gravitational potential &#8211; just like LIGO measures the change in the rate of clocks at that location based on the apparent difference is distances.</div>
+<div></div>
+<div>Richard K Collins, Director, The Internet Foundation</div>
+<div></div>
+<div><img loading="lazy" decoding="async" class="alignnone size-full wp-image-506" src="/wp-content/uploads/2021/03/Sun-Moon-Signal-example-from-Hsinchu-Taiwan-Minute-Data-July-2012-31-Days-linear-regression-1.png" alt="" width="1867" height="917" /> <img loading="lazy" decoding="async" class="alignnone size-full wp-image-505" src="/wp-content/uploads/2021/03/Matsushiro-Japan-Superconducting-Gravimeter-regression-to-Sun-Moon-data2-1.png" alt="" width="944" height="462" /></div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

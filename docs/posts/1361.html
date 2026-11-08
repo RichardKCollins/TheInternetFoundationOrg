@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment on Odaiba Tokyo Live Webcam &#8211; Standards for live Internet data streams and archives - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Comment on Odaiba Tokyo Live Webcam &#8211; Standards for live Internet data streams and archives</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-05-19</span>
+       &bull; <a href="/?p=1361" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <div class="default-style">Dear Reader,</div>
+<div class="default-style"></div>
+<div class="default-style">
+<div class="default-style" style="padding-left: 40px;">I am watching your live webcam at <a href="https://www.youtube.com/watch?v=eVmEjdoD2x8">https://www.youtube.com/watch?v=eVmEjdoD2x8</a> with the title</div>
+<div></div>
+<div class="default-style" style="padding-left: 40px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">レインボーブリッジと東京タワー　４Kライブカメラ、お台場東京、高層マンションからライブ配信。首都高速台場線、お天気カメラお台場東京。【ちんあなご】Livecamera RainbowBridge</span></div>
+<div></div>
+<div class="default-style" style="padding-left: 40px;">
+<div class="default-style">I was curious what kind of camera you are using, its lens and horizontal field of view.  There are thousands of live webcams on the Internet now, and no standards for documentation.  I personally think it would be good if they all gave their latitude, longitude, height above sea level, azimuth and elevation (direction angles for the direction of the center of the view), camera type, focal length, horizontal and vertical field of view, magnification.</div>
+<div class="default-style"></div>
+<div class="default-style">The reason I like to know those things is I enjoy machine vision problems and like to know how far away or how large things are in images. I want to know what I am seeing and things about each location.  I keep your video live on one of my screens sometimes just for enjoyment.  Like looking out my window while I am working.</div>
+<div class="default-style"></div>
+<div class="default-style">Just now the moon was showing for a short time.  In some frames it was larger than in other frames.  There was a bit of fog, so the light was spread our uniformly.  Sometimes the moon appeared larger.  I even enlarged it (I wrote a little magnifier program) and counted the pixels.  In some frames it was about 40 pixels wide, and then a few minutes later when the clouds were open again, it looked to be 44 pixels wide.  The moon is about 387,000 km away today (I googled &#8220;How far away is the moon today?&#8221; and the moon&#8217;s radius (&#8220;moons radius in km&#8221;) is 1731.1 km so the angle is 2*arctan(1731.1/387000) = 0.513 degrees.  My screen is 1920 pixels wide, so (1920/40)*0.513 degrees would be 24.6 degrees horizontal field of view.  And (1920/44)*0.513 degrees would be 22.4 degree for horizontal field of view.</div>
+<div class="default-style"></div>
+<div class="default-style" style="padding-left: 40px;">Those times when the moon is showing, some very beautiful snapshots and short and long sequence are lost forever because the record only goes back the last 12 hours.  There is not a courteous and easy way to record and share images of this one webcam, and think of all the lost data and opportunities from all the thousands of webcams globally now. That includes many scientific cameras from telescopes, microscopes and experiments of all kinds.</div>
+<div class="default-style"></div>
+<div class="default-style">Now I found a Wikipedia article on &#8220;Angle of View&#8221; at <a href="https://en.wikipedia.org/wiki/Angle_of_view">https://en.wikipedia.org/wiki/Angle_of_view</a> and it says that you need to know the physical size of the sensor in the camera.  They use</div>
+<div class="default-style"></div>
+<div class="default-style">AngleOfView = 2*ArcTan(SensorSizeMillimeters/2*FocalLengthMillimeters)</div>
+<div class="default-style"></div>
+<div class="default-style">So I was trying to guess or figure out what camera.  Now you have one camera there and I can kind of guess. But with possibly tens of thousands of live cameras on the Internet now, is every person supposed to guess which camera, where it is, what direction it is pointing, its sensor size and lens configuration?  It seems that should be basic information that should be readily available.</div>
+<div class="default-style"></div>
+<div class="default-style">I am trying to write some image enhancement tools for videos.  A simple stacking program to use the motion of the moon and stars and planets and an pixel averaging algorithm can improve the quality of the images.  For these slowly varying fixed view cameras, that could mean a simple program on the viewers computer in Javascript can improve the viewing enjoyment for such scenes and are now available. The magnifier I made is 10x and I can use really basic super resolution methods (tracking and stacking.  NASA says &#8220;drizzling&#8221; for some reason).  Anyway, it helps me to see better.</div>
+<div class="default-style"></div>
+<div class="default-style">I am supposed to write standards for the whole Internet.  I took on the Internet Foundation back in 1998 after the original Internet Foundation was cancelled for US political reasons.  I think it is a good idea for all the webcams to identify the location, direction of the camera (if they are panning, zooming and tilting, then some summary of that sequence of viewing changes).</div>
+<div class="default-style"></div>
+<div class="default-style">Now the camera title says it is Odaiba, Tokyo, Japan and I can search for that on Google maps and see an overhead view by old satellite photo.  I don&#8217;t know exactly where the camera is located.  And I really don&#8217;t know Tokyo skyline from that direction.  So not sure what those building are at the far right.  So I cannot easily determine the angle that way.</div>
+<div class="default-style"></div>
+<div class="default-style">I found this Wikipedia article on Odaiba that is interesting, but hard to connect to the webcam.  <a href="https://en.wikipedia.org/wiki/Odaiba">https://en.wikipedia.org/wiki/Odaiba</a></div>
+<div class="default-style"></div>
+<div class="default-style">Ideally, there would be a simple javascript overlay for the webcam.  It would be a transparent div that would fit the video frame with hotspots to identify the things in the video.  For the PTZ (pan tilt zoom) cameras it would have to be time dependent.  But it is not hard programming.  Just takes a little effort to coordinate and locate things.</div>
+<div class="default-style"></div>
+<div class="default-style">As I am writing this, I am thinking of the many beach, city skyline, river, snow resort, mountain, weather camera, traffic camera, wildlife camera, and tourist places I have seen in these live videos on YouTube (and elsewhere).  All the viewers must have the same questions I do:  Where is this?  What direction is the camera pointing (now)?  What is the magnification in pixels so I can relate that to my screen?</div>
+<div class="default-style"></div>
+<div class="default-style">And most importantly, what am I seeing? What is that building? What is that bridge?  Are there other views?  Are there webpages that explain things?  Are there tours or hotels or local resources I can connect to?</div>
+<div class="default-style"></div>
+<div class="default-style">I found more and more &#8220;all sky&#8221; cameras too. These are wide angle view of the whole sky. They are for astronomy and weather mainly, depending on the interests of the person setting it up.  A few very slow (1 frame per minute, 1 frame every five minutes) all sky cameras are used at observatories.  But I live in a city (Houston) and never see the stars.  Often I don&#8217;t see the moon or sun for days or weeks at a time.  There are about 90 sunny days in Houston out of 365.  So about a quarter of the time you can see the sun and moon.  And I live near downtown, so light pollution is horrible.</div>
+<div class="default-style"></div>
+<div class="default-style">Anyway all the live webcams with some bit of sky in them (Your view has full sky for roughly the top 475 pixels out of 1080 on my screen down to the tops of the tallest buildings. And some places where it goes down to 518 pixels between the buildings. That is just less than half the whole screen is sky. Wonderful when there are clear skies and I can see the moon and planets, sun and stars and galaxies. And for my interest in meteorology, it is possible to look up the coordinates and details of every single thing.  Including (gradually) things like space stations, LOTS of satellites, comets, reentry of satellites now and then, planes and maybe a few ufos.  Lightning detection is now to where they can image the tracks in 3D.  The weather maps can be mapped onto the screen from the viewers point of view.</div>
+<div class="default-style"></div>
+<div class="default-style">If a webcam is going to be seen by million of viewers over many years (decades?) then perhaps my idea is right.  Maybe there should be standards of practice &#8212; serving students, and people of all ages and interests.</div>
+<div class="default-style"></div>
+<div class="default-style">What do you think?  I would like to know.</div>
+<div class="default-style"></div>
+<div class="default-style">Can you tell me the technical details of the camera?  Model, location, direction, lens, magnification?  Would you like to put an overlay?  I am NOT selling things, but for the many viewers of this beautiful scene, i would like them to know what they are looking at.</div>
+<div class="default-style"></div>
+<div class="default-style">
+<p>I see you have other live video feeds 24/7.  They are listed at <a href="https://www.youtube.com/channel/UC-iKt6xd8uD-8_kXRfPY7Jw">https://www.youtube.com/channel/UC-iKt6xd8uD-8_kXRfPY7Jw</a> You might want to also have English titles.  You CAN put descriptive materials in the description field below each webcam video on their pages. There is room for links and contact information.  And information about the camera.</p>
+<p>I copied my local ABC13 weathercam owners.  I had suggested to them they put an &#8220;all sky&#8221; camera on top of their other cameras that only show a tiny portion of the skyline.  And I copied Chris Ober from our local astronomy club because I was suggesting they host an all sky camera for all Houstonians (&#8220;how many Houstonians are there?&#8221; about 6.5 million).  A clear sky site not far from Houston would at least let all Houstonians see a live, high quality (and indexed) map of the night sky and day sky.  I have personal interests, and I have global interests.</p>
+</div>
+<div class="default-style"></div>
+<div class="default-style" style="padding-left: 40px;">Houston ABC13 Live Webcam1: <a href="https://www.youtube.com/watch?v=hjqbpnigAHA">https://www.youtube.com/watch?v=hjqbpnigAHA</a></div>
+<div class="default-style" style="padding-left: 40px;">Houston ABC13 Live Webcam2: <a href="https://www.youtube.com/watch?v=c5_w4yGHmNQ">https://www.youtube.com/watch?v=c5_w4yGHmNQ</a></div>
+<div class="default-style"></div>
+<div class="default-style">&#8220;How many people live in large cities?&#8221;  The UN says 54%. Globally that is just over 4 Billion people who seldom see clear skies.  But in the United States, more than 80% of people live in large cities. That is over 250 Million US citizens who cannot see the stars.  Light pollution, buildings, distractions, and pollution sometimes.</div>
+<div class="default-style"></div>
+</div>
+</div>
+<div class="default-style">
+<div class="default-style">Sincere regards,</div>
+<div class="default-style">Richard K Collins, Director, The Internet Foundation</div>
+</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trying to download frames from Solar Dynamics Observatory - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Trying to download frames from Solar Dynamics Observatory</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-08-27</span>
+       &bull; <a href="/?p=2304" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <div class="default-style">Dean, Kevin,</div>
+<div class="default-style"></div>
+<div class="default-style" style="padding-left: 40px;">I am at <a href="https://sdo.gsfc.nasa.gov/data/aiahmi/">https://sdo.gsfc.nasa.gov/data/aiahmi/#</a> and wondering what the data looks like.  It says &#8220;Browser, Movie, Frames&#8221; but those are not formats, those are types.  A frame format might be PNG, FITS, SER or some other lossless format.</div>
+<div></div>
+<div style="padding-left: 80px;">You can make your URL for your names to be <a href="mailto:MailTo:dean_dot_pesnell@nasa_dot_gov">MailTo:dean_dot_pesnell@nasa_dot_gov</a> so that it can be copied by right click, copy link address.  In the link title, the strings are not accessible for copy easily. Then people have to eyeball transcribe or inspect the page source.  If you (NASA.gov) are having problems with spam use of email addresses, I think there are better ways to track people down, than to inconvenience EVERY potential visitor.  Block on spammer, and inconvenience a million good visitors??</div>
+<div class="default-style" style="padding-left: 40px;"></div>
+<div class="default-style" style="padding-left: 40px;">But that is not why I am writing.  My problem, walking through as a new visitor, is not knowing what will happen next and how much data there is.</div>
+<div class="default-style" style="padding-left: 40px;"></div>
+<div class="default-style" style="padding-left: 40px;">I selected 2021-08-01 and it automatically filled in 2021-08-05.  On the internet these numerical date format are deprecated because in different countries the order of month and day varies, so that 08-01 can mean two thing.</div>
+<div class="default-style" style="padding-left: 40px;"></div>
+<div class="default-style" style="padding-left: 40px;">But that is not why I am writing.  I don&#8217;t know if I put 2021-08-01 and 2021-08-01 I will get one day worth of images, and what that will be. So I got some frames as a video in the browser but I don&#8217;t know how many frames.  Not horrible to not know, just ambiguous.</div>
+<div class="default-style" style="padding-left: 40px;"></div>
+<div class="default-style" style="padding-left: 80px;">
+<p>I changed to &#8220;Frames Download&#8221; and it changed my 1024&#215;1024 to 512&#215;512 without asking.  And warns me &#8220;Ther is a total limit of 500 imags per query&#8221; but it does not tell me how many images I am likely to get with the query.  So I guess I have to blindly try things until I get one that works. It also put back 2021-08-05 even though I set it to 2021-08-01 trying to get ONE DAY.</p>
+<p>So with 2021-08-01 and 2021-08-05 (it refuses to let me change to one day) AIA 171 (gold), Frames Download, 1024&#215;1024, nth image empty, it gives this error message:</p>
+</div>
+<div class="default-style" style="padding-left: 80px;"></div>
+<div class="default-style" style="padding-left: 80px;"><span style="color: #ff0000;">[APPLICATION ERROR] Caught exception: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column &#8216;ip&#8217; at row 1</span></div>
+<div class="default-style" style="padding-left: 80px;"></div>
+<div class="default-style" style="padding-left: 80px;">I tried 2021-08-01 to 2021-08-02 and get the <span style="color: #ff0000;">same error message</span> for Frames Download, and when I go back, it has reset the end date again to 2021-08-05.</div>
+<div class="default-style" style="padding-left: 80px;"></div>
+<div class="default-style" style="padding-left: 80px;">Since it put 512&#215;512 in the box, maybe that will work.  So I try the 2021-08-01 and 2021-08-05 again,<span style="color: #ff0000;"><strong> same error.</strong></span></div>
+<div class="default-style" style="padding-left: 80px;"></div>
+<div class="default-style" style="padding-left: 80px;"><span style="color: #ff0000;">I reloaded the page, selected Frames Download, let it put 512&#215;512, and put 10 in the nth image box.  same error.</span></div>
+<div class="default-style" style="padding-left: 80px;"></div>
+<div class="default-style" style="padding-left: 80px;"><span style="color: #ff0000;">I reloaded the page, set it for the 2021-08-26 to 2-21-08-27, Frames download, 512&#215;512, empty nth. same error.</span></div>
+<div class="default-style" style="padding-left: 80px;"></div>
+<div class="default-style" style="padding-left: 80px;"><span style="color: #ff0000;">I think Frames download is broken.</span></div>
+<div class="default-style" style="padding-left: 40px;"></div>
+<div class="default-style" style="padding-left: 40px;"><span style="color: #000000;">But that is not why I am writing.  It is because, even if it worked, you did not tell me how much data is involved if I make ANY selection.  It is a courtesy for the Internet &#8211; tell people what is going to happen if they make the selection they have chosen.  For downloads and sharing data of any type, people (or their computers on their behalf) need to know what is going to happen next.  </span></div>
+<div class="default-style" style="padding-left: 40px;"></div>
+<div class="default-style" style="padding-left: 40px;"><span style="color: #000000;">Thank you.</span></div>
+<div class="default-style"></div>
+<div class="default-style">Richard Collins, Director, The Internet Foundation</div>
+<div></div>
+<div>
+<div class="default-style">I changed to Movie download, selected 2021-08-01, left the end date empty, it set 1024&#215;1024 without me asking.  <span style="color: #ff0000;">There was an error with your end date.  <span style="color: #000000;">I made it 2021-08-02</span></span></div>
+<div class="default-style"></div>
+<div class="default-style"><span style="color: #ff0000;">[APPLICATION ERROR] Caught exception: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column &#8216;ip&#8217; at row 1</span></div>
+<div class="default-style"></div>
+<div class="default-style">So I think Movie Download is not working either.   I tried 2021-08-26 to 2021-08-27 just in case.  NOPE. <span style="color: #ff0000;">Same error.</span></div>
+</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

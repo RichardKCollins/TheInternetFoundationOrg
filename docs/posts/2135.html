@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some Notes on applications for MEMS gravimeters and their global calibration - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Some Notes on applications for MEMS gravimeters and their global calibration</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-08-06</span>
+       &bull; <a href="/?p=2135" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <div>Marley,</div>
+<div></div>
+<div style="padding-left: 40px;">For the last 20 years or so, I have been tracking gravimeter developments, hoping one day they could be developed enough to use in low cost gravitational imaging arrays. I don&#8217;t have my notes on what I wrote to you.  My memory is that I saw you were at &#8220;earth tide&#8221; sensitivity. That is my first threshold. Any group that can get a decent sun moon tidal signal could then go on to be able to measure speed of gravity.  If you read the Wikipedia article on gravimeters, you will see my words there.  The sun moon tidal signal is huge in gravitational terms.  A three axis gravimeter can use it for calibration, and it is so precise in timing and and orientation that it can be used to solve for both position and orientation.  I call that &#8220;gravitational GPS&#8221;.  Its advantage is that it works underground and under the ocean.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I am tired.  I have been telling groups this for many years now.  I only found it because I wanted to measure the speed of gravity and the only network that was possible is the superconducting gravimeters.  They only have one axis, and the manufacturers had no incentive to make a three axis device.  I could show that the speed of gravity and the speed of light are very close, but could not have absolute measurements because of the ambiguity in the orientation of the SGs vertical axis.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I went through all the seismometers in the IRIS.edu system and found, eventually, that broadband seismometers could be calibrated as gravimeters on all three axes. The two horizontal axes (North and East) are noisier than the vertical. But it showed clearly that the signal is always there, and can be used as a reference.  Some of the Transportable Array seismometers did not have documentation on the exact orientation.  That is why I decided to see if I could solve for orientation and position too.  And it worked.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The sun moon vector tidal signal is simply the Newtonian gravitational acceleration of the sun at the station minus the sun acting on the center of the earth, plus the moon acting on the station minus the moon on the center of the earth.  Plus the vector centrifugal acceleration of the station. That station centered, earth fixed tidal acceleration vector gets rotated into station North East Vertical and then only a linear regression is needed to fit the curve to each axis.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The superconducting gravimeters were all on different bases.  The linear regression gives an offset and multiplier.  The multiplier is stable over weeks and months.  The offset is a very sensitive indicator of changes in the station.  The level of the helium, local rain fail, power system changes.  I can show you how every change in the offset has an exact counterpart in the station logs.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">So I cannot pay you to improve something I think would be useful to the world.  If anyone would stretch a bit, they would find that time of flight gravimeters can be used in arrays to measure the atmosphere, ocean and under the earth.  But I still try to at least tell groups there is an easy and reliable way to calibrate MEMS (or Bose Einstein, or atom interferometer, of electrochemical, or many other types of gravimeters) that are getting to the sensitivity they can measure earth tides.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">In my view of things, the gravitational field from the sun and moon that is an absolute reference to tie together global networks.  I cannot build these things myself, not pay for their development, and so far only a few groups have changed their own plans at all when I try to tell them it is very important.  I do review new papers that people ask me, but mostly I am just tired.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">
+<p>What I recommend you do is use this (you can use the Jet Propulsion Labs solar Horizon system, or Matlab or Python to get the coordinates for the center of the sun, moon and earth.  I have used a WGS84 model for the station coordinates and International Earth Rotation Service for the rotation rate.  The residual is almost all atmospheric and oceanic.  i was trying to use these arrays to calibrate the global climate models and local atmospheric models.</p>
+<p>Since each axis only needs a linear regression, that is only 6 numbers. If your MEMS is drifting hour by hour but sensitive enough, just assume that the variation is from the sun moon change and lock down the signal to that level.  I keep hoping some group would do this and let me help go on to the next three of four steps &#8211; lab tests with small masses, speed of gravity tests and 3D imaging using ocean waves or cars and trucks as references.  Then speed of gravity measurements (the cars and ocean waves can do that). Then atmospheric imaging and subsurface imaging. Then communications. Then earthquake early warning.</p>
+</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The Japan earthquake registered on both the superconducting gravimeter and broadband seismometer arrays as an &#8220;at the speed of light and gravity&#8221; signal from the changing source gravitational potential registering as an acceleration.  There are groups working on that.  I put a few notes at GravityNotes.org for that. But have so many other things to do, that I don&#8217;t keep it up.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The GW170817 neutron star merger gravitational signals and electromagnetic signals arrived at exactly the same time.  Not close, but exact.  I could have checked that with a three axis gravimeter network very precisely.  My efforts to model the capabilities said that it can be as, or more accurate, than VLBI networks and there is no ionospheric attenuation.  The NGA (National Geospatial-Intelligence Agency) needs under the ocean and under the ground detector and imaging arrays.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">That is all I have time or energy for.  I was just trying to share what took a lot of tedious effort to work out and check.  I did talk to the JPL group that makes the ephemeris, and they said that if I could ever get a network that could give them ground truth on the GM for the sun and moon, and for the distances to the sun and moon, and for the precise locations of the center of the earth and moon, they could use that to constrain their model.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">MY first full time job was as a scientific programmer for the CIA working on satellite orbit determination to track all the objects in space.  Later, when I was studying gravitational radiation detection at the University of Maryland at College Park (Charles Misner and Joe Weber) I worked with Steve Klosko on the NASA GEM series of earth gravitational potentials.  Using satellite orbits and other datastreams to improve the models.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I am just trying to encourage your people to use an easy way to lock down global gravitational networks and to stabilize still more sensitive MEMS gravimeter arrays &#8211; particularly to calibrate the atmospheric models.  With time of flight gravimeters, imaging is simple.  I track all the global sensor networks and their associated communities for the Internet Foundation.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I am posting this with my personal notes at  <a href="/?p=2135">/?p=2135</a></div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I cannot afford to buy anything, I could recommend things but I don&#8217;t know anything about what your groups are doing or would be willing to try.</div>
+<div></div>
+<div>Richard Collins, Director, The Internet Foundation</div>
+<div></div>
+<div>I originally used Delphi (Pascal) to calculate the Chebychev polynomials for the JPL solar system ephemeris positions of the sun, moon and earth.  For very long time series it is necessary to correct for earth moon barycenter rotations. But for everyday &#8220;gravitational compass&#8221; and &#8220;gravitational GPS&#8221; application that a MEMS might be used for, that is not really needed, or just upgrade the algorithm.  It is a few lines of Javascript now. Liang Cheng Tu in China has the best MEMS gravimeter group right now, that I know of.  He also did some &#8220;Big G&#8221; gravitational constant measurements. I strongly recommended using those first as gravimeters to be sure they have taken care of the big swings in the gravitational acceleration at their station. Most of the &#8220;quantum&#8221; experiments, almost all the &#8220;pico&#8221; and many &#8220;nano&#8221; experiments can pick up the gravitational tidal signal.  It is NOT tied to the earth, just easier to measure when you use the earth as a reference.</p>
+<p>The residual in that Matsushio Japan example is almost all atmospheric.  That is a huge signal still if you use atom or electron interferometer based gravimeters.  LIGO next generation will probably be some combination of atom interferometer designs. but there are many groups and many competing and competent device choices. MEMS just has the potential for everyday use in meteorology and geophysics arrays. You have to look very closely at the SG trace to see the station data underneath the theoretical (Newtonian) calculation.  That whole curve only has two numbers changing the scale and the offset. That is how closely a gravimeter can track the sun and moon.  A tiny shift in location or orientation and the residuals go up quickly. I have been a mathematical statistician for most of the last 50 years. I can think of many ways to improve things. But without real data and no one building better sensors, I have to use the existing networks build for other things. And they work, but are very poor for imaging the atmosphere and oceans. I can probably use the small LIGO arrays for a few things, but I was at the beginnings of gravitational wave detection and I would like to finish what Joe Weber and Robert Forward started.</p></div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

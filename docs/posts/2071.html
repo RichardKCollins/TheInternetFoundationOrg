@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note on hyperspectral telescopes &#8211; Looking at Vega - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Note on hyperspectral telescopes &#8211; Looking at Vega</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-08-04</span>
+       &bull; <a href="/?p=2071" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>I would like to see a small region of the night sky at high frame rate. The ZWO cameras I have looked at could run 128&#215;128 at 480 frames per second. That lowers the photons per second at the sensor, but the photos each do their bit. And the local noise is uncorrelated. If I run two cameras at once, then even moreso, it is possible to improve the certainty of what comes from the star as opposed from the atmosphere, or the electronics. I have ZWO ASI178MC and ZWO ASI224MC.</p>
+<p>I had others but gave them to Houston Astronomical Society, though no one has said if they ever got used. I saw an amateur radio telescope (21 cm line) who only had a 9 degree swath pointed vertically. Running 24/7 is saw that part of the sky in detail. Me, I would let a x200 telescope point at the sky and then capture what it sees. Over time it would cover some of the same things, but the earths rotation is not steady or constant, so that would vary over time. I just needs enough memory to cover that swath in detail, and then layer and statistics for what happens at each pass. I looked into how photons pass though matter (lenses, gases, liquids, field affected materials of all kinds). I would like to design a new way of processing them (photons, signals, fluctuations, wavelets, wavefronts).</p>
+<p>Can you tell me what kind of telescopes you use yourself?</p>
+<p>I looked at the places you said you work. That one company makes (to me) very expensive and overly complicated telescopes. I do not think it necessary to make compound telescopes, and by fighting the color separation of the lens by making layers and layers of materials &#8211; it loses the elegant simplicity of just tracking the lights of different colors. The pixel maps could be done at a nano scale and to precise frequencies. Using the full bandwidth of a camera like these ZWO&#8217;s for small regions, it should be possible to demonstrate how to use superresolution methods for hyperspectral astronomy with low cost lenses.</p>
+<p>But I have to read hundreds of papers to get tiny bits of data. If you have time perhaps you could let me look at some bits of the sky at high sampling rates. It is a good way to focus all my attention on a small problem. Then, usually, many things are possible.</p>
+<hr />
+<p>The pressure of the atmosphere on the earth is about 101325 Pascal. If the acceleration is roughly 9.8 m/s2, that is 101325/9.8 = 10,339.3 KiloGrams per square meter to give that same force per unit area. The atmosphere is only about 500 kilometers thick. So it acts like a turbulent lens to any light or thing traveling at the speed of light and gravity &#8211; for 1.66782 milliseconds.</p>
+<p>With fixed source, (assuming registration of every frame) those variations spread the light away from the center.</p>
+<p>The star Vega is about twice the diameter of the sun, and 25 light years. Its angular diameter is about 3.25 milliArcSeconds. I would say that it is 3.25E-3/(360*60*60) = 2.5 nanoCircles. Its image in photos spreads far beyond the core that would be be the actual star. So (I think, but check my thinking) that most photos are pictures of the stars&#8217; light spread out by the atmosphere and a bit by the lens. If so, then mapping the &#8220;atmospheric lens&#8221; properties (over time and through different atmospheres and times, might give a way to learn more of what the light at the surface of the stars looks like. What do you think?</p>
+<p>Here is a link to Vega in Aladin Lite online. It says 58.75&#8242; FOV. I think that is the full width of the screen. <span role="gridcell"><a class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h oo483o9r f1sip0of lzcic4wl ljqsnud1 gpro0wi8" tabindex="0" role="link" href="https://aladin.unistra.fr/AladinLite/?target=vega&amp;fov=1.00&amp;fbclid=IwAR1iGlYPJ9-H4krsxvhu4EdynR7J0mjSl-UCZUZxZ7sqqmIo_qDe-hGiCug" target="_blank" rel="nofollow noopener">https://aladin.unistra.fr/AladinLite/?target=vega&amp;fov=1.00</a></span></p>
+<p>And when I fill the screen side to side, it says 22.09&#8242; FOV. And its diameter is 0.00325&#8242;. Did I do that right?</p>
+<p>It is so bright. It would need a very high frame rate to dim the glare and only see the pixels that come directly. And, if we know that it is small, all the light from radial distances should be from the &#8220;atmospheric lens&#8221;. Does this sound right?</p>
+<p>The light probably &#8220;bleaches&#8221; the channel. Or, rather, a close tracking sensor restricts its view of the photons it gathers.</p>
+<p>So we can learn about the atmosphere, and the azimuthal (around the star from some &#8220;North&#8221; direction) &#8212; variations in intensity. With many many pixels images to check, their average should see small variations that are not related to the atmosphere, but to places on the source. I like to meditate on and study problems like that. But I have no data to do it for real.</p>
+<p>Taking a short break, I was thinking about the few Nobel prize winners I have met or seen make presentations.</p>
+<p>&#8220;You cannot fully explore the future, if you are walking backwards, always looking at the past.&#8221; I just made that up, I am sure it is a common thought.</p>
+<hr />
+<p>That Aladdin site gives the measured intensities of the source stars. Its flux in photons at different frequencies. Many stars have absolute sizes, distances and spectra. My plan was to use the reference data for known stars &#8212; positions, sized of the stars, spectral characteristics and intensities at different wavelengths &#8212; to calibrate the pathway, optics, electronic amplification and detectors.</p>
+<p>It is possible to put a transparent div over a video or image on any web page &#8211; that has the registered and correct star maps &#8211; and their data. There are cell phone apps like that where they compass, GPS, accelerometer in the phone tell where the phone is and which direction it is pointed &#8211; to identify the sky and what is in in. Or to say what is in the sky &#8211; even if you cannot see it.  You track the mouse as it hovers and have each pixel (where there is know data) linked to the databases.</p>
+<p>Beside the lens and pixel size, the frames per second, amplification (gain), exposure time, threshold, sensor temperature and a few other things also affect what you can record and extract.</p>
+<p>Since most of the information needed about the camera is not published, I have been buying them and testing them to see what they are capable of. I can model many things from first principles, but often why bother it somewhere it is possible to measure and work with real data?  Every sensor in every network now needs continuous calibration and intercomparisons to get the most out of it for its present purpose, and to use its &#8220;noise&#8221; for other networks.</p>
+<p>Here is a link to the SIMBAD database for vega &#8211; <a href="https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=Vega">https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=Vega</a></p>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="c2omc-0-0">
+<div class="" data-block="true" data-editor="4911c" data-offset-key="aisrk-0-0">
+<div class="_1mf _1mj" data-offset-key="aisrk-0-0"><span data-offset-key="aisrk-0-0">I searched for &#8220;star database with diameters and distances&#8221; and came Stellar-Database.com where I could search for Vega. http://www.stellar-database.com/Scripts/search_star.exe?Name=vega</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="b4g2u-0-0">
+<div class="_1mf _1mj" data-offset-key="b4g2u-0-0"><span data-offset-key="b4g2u-0-0">It gives the source for the diameters as Apparent Diameters and Absolute Radii of Stars (Fracassini+ 1988)  Searching for that title gives many ways people have measured or tried to measure or estimate the absolute size of stars. Among them some basic mass-luminosity color age relationships that have been found and studied. This Sloan Digital Sky Survey page tells how to calculate the radius from the spectral characteristics. I have seen these equations for 50 years, but never had any data or real need to use what was available. <a href="https://cas.sdss.org/dr4/en/proj/advanced/hr/radius1.asp">https://cas.sdss.org/dr4/en/proj/advanced/hr/radius1.asp</a></span></div>
+</div>
+</div>
+<div data-offset-key="b4g2u-0-0">
+<hr />
+<div class="" data-block="true" data-editor="4911c" data-offset-key="cacqa-0-0">
+<div class="_1mf _1mj" data-offset-key="cacqa-0-0"><span data-offset-key="cacqa-0-0">It is much easier to just search &#8220;What is the radius of Vega in kilometers?&#8221; or to search Wikipedia for a quick start. Google gives 1.6432 million km with no attribution or trace information (shame on them). Asking What is the radius of Vega in solar radii gives 2.362 Solar Radii which comes from the Wikipedia article where they explain that it is rapidly rotating, and we are looking at it along its rotational axis. So we see an equatorial radius of 2.73 Rsun and they list the radius as 2.362-2.818 Rsun. Its distance is given as 25.04 Light years which &#8220;25.04 Light years in solar radii&#8221; on google gives 3.40516E8 Rsun distance. </span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="dcs49-0-0">
+<div class="_1mf _1mj" data-offset-key="dcs49-0-0"><span data-offset-key="dcs49-0-0">2.73/3.40516e+8 = 8.01724442e-9 of the radial distance.</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="1ie78-0-0">
+<div class="_1mf _1mj" data-offset-key="1ie78-0-0"><span data-offset-key="1ie78-0-0">2.73/ (2*pi*R) = 2.73/(2*pi*3.40516e+8) = 1.27598408e-9 of a full circle. (I would call it 1.275 nanoCircles) </span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="ar3d3-0-0">
+<div class="_1mf _1mj" data-offset-key="ar3d3-0-0"><span data-offset-key="ar3d3-0-0">A full Circle is 360*60*60*1000*1000 = 1.296e+12 microArcSeconds</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="8i9m-0-0">
+<div class="_1mf _1mj" data-offset-key="8i9m-0-0"><span data-offset-key="8i9m-0-0">So the Radius is </span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="8pqt7-0-0">
+<div class="_1mf _1mj" data-offset-key="8pqt7-0-0"><span data-offset-key="8pqt7-0-0">360*60*60*1000*1000* 2.73/(2*pi*3.40516e+8) = 1653.67536637 microArcSeconds</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="5gr1q-0-0">
+<div class="_1mf _1mj" data-offset-key="5gr1q-0-0"><span data-offset-key="5gr1q-0-0">or 1.65367536637 milliArcSeconds and twice that is 3.30735 milliArcSeconds for the diameter.</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="6ejqu-0-0">
+<hr />
+<div class="" data-block="true" data-editor="4911c" data-offset-key="c2re4-0-0">
+<div class="_1mf _1mj" data-offset-key="c2re4-0-0"><span data-offset-key="c2re4-0-0">2*360* 2.73/(2*pi*3.40516e+8) is 9.18708537e-7 degrees</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="dlmrr-0-0">
+<div class="_1mf _1mj" data-offset-key="dlmrr-0-0"><span data-offset-key="dlmrr-0-0">10^9*2*360* 2.73/(2*pi*3.40516e+8) is 918.708536872 nanoDegrees</span></div>
+<div data-offset-key="dlmrr-0-0"></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="c9fva-0-0">
+<div class="_1mf _1mj" data-offset-key="c9fva-0-0"><span data-offset-key="c9fva-0-0">The link on Aladdin to http://aladin.unistra.fr/AladinLite/?target=Vega brings up a screen with 3 degree FOV. You cannot right click and save the image. It seems to, but it comes up empty. I used Alt-PrintScreen and then pasted into Windows Paint for at 1920&#215;1080 pixel image. The horizontal diameter is about (1136-906=230 pixels). The whole screen is 3 degrees, so the diameter is </span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="37i5j-0-0">
+<div class="_1mf _1mj" data-offset-key="37i5j-0-0"><span data-offset-key="37i5j-0-0">230 pixels * (3 degrees/1920 pixels) = 0.359375 degrees visual</span></div>
+<div data-offset-key="37i5j-0-0"></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="9ectr-0-0">
+<div class="_1mf _1mj" data-offset-key="9ectr-0-0"><span data-offset-key="9ectr-0-0">360*2*2.73/(2*pi*3.40516e+8) is the degrees for the diameter of Vega = 9.18708537e-7 degrees</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="378l2-0-0">
+<div data-offset-key="378l2-0-0"></div>
+<div class="_1mf _1mj" data-offset-key="378l2-0-0"><span data-offset-key="378l2-0-0">The degrees in the image divided by the degrees of the star is</span></div>
+<div data-offset-key="378l2-0-0"></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="3ahrp-0-0">
+<div class="_1mf _1mj" data-offset-key="3ahrp-0-0"><span data-offset-key="3ahrp-0-0">(230 * (3 /1920 ) )/(360*2*2.73/(2*pi*3.40516e+8) ) = 391,174.116248</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="99nbm-0-0">
+<div class="_1mf _1mj" data-offset-key="99nbm-0-0">
+<p><span data-offset-key="99nbm-0-0"><span data-offset-key="99nbm-0-0">So the image shown in Aladdin Lite for Vega (and most photos) is 319 thousand times larger than the actual diameter.</span></span></p>
+<hr />
+<p>The diameter is 230 pixels so to see the &#8220;real&#8221; star seen the way that is shown in the current photos would mean increasing the magnification by 391,174 times. Round it off to a million times more.</p>
+<p>But what are we doing with the information? Just looking at it? Stimulate a few brain cells in one dumb human (me)? That is useless. Now, if I take a million photos of this sort, that should give me a million times more information &#8211; if I am careful and capture or process it all. Me, I am not afraid of a million images.</p>
+<p>What if a million people take a million images of Vega? That is not impossible.</p>
+<hr />
+<div class="" data-block="true" data-editor="4911c" data-offset-key="249uo-0-0">
+<div class="_1mf _1mj" data-offset-key="249uo-0-0"><span data-offset-key="249uo-0-0">I think that a normal human viewing is about 100 degrees. And this is (3*230/1920) = 0.359375 degrees in the expanded images we seem to be getting from Vega . So the magnification is roughly 100/0.359375 = 100/(3*230/1920) = 278.260869565 times.</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="7r9k8-0-0">
+<div class="_1mf _1mj" data-offset-key="7r9k8-0-0"><span data-offset-key="7r9k8-0-0">So a 300 times magnification gives us a &#8220;picture&#8221; of Vega that is 391 thousand times larger than the actual thing?????!!</span></div>
+</div>
+<div class="" data-block="true" data-editor="4911c" data-offset-key="57q6g-0-0">
+<div class="_1mf _1mj" data-offset-key="57q6g-0-0"><span data-offset-key="57q6g-0-0">What a strange world we live in. ALL THOSE ASTROPHOTOGRAPHS of stars are that wrong? It is staring at a star that seems to be the issue.<br />
+</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-offset-key="57q6g-0-0"></div>
+<div data-offset-key="57q6g-0-0">
+<hr />
+</div>
+<div data-offset-key="57q6g-0-0">
+<p>I searched for &#8211; magnification of a telescope &#8211; and came to wikipedia &#8220;optical telescope&#8221; then magnification. It gives an example of a 1200 mm focal length lens with a 3 mm objective (3 mm lens on the camera???) to give 400 magnification. So that seems not too hard.</p>
+<p>I searched site:astrobin.com &#8220;Vega&#8221; and found this example.</p>
+<p>https://www.astrobin.com/321315/?nc=user</p>
+<p>That image is 2000*1279 pixels at 1.258 arc seconds per pixel.</p>
+<p>2000*1.258/(60*60) the screen width in arcseconds converted into degrees</p>
+<p>2000*1.258/(60*60) = 0.69888 degrees FOV for his photo</p>
+<p>I downloaded his photo which showed 1824*1166 pixels. He added gauze to make the photo &#8220;pretty&#8221;. Light is striking the gauze and sending light to different parts of the pixel array of the sensors radially outward from the star itself. Somewhere in that glare. His saturated image &#8212; all the pixels at (255,255, 255) near the center of Vega &#8212; goes from 925 to 959 or 34 pixels which he says are 1.258 arcSeconds per pixel. Not sure I trust his numbers just now. But that is 34*1.258/(60*60) degrees = 0.011881 degrees. Now he did not run the camera that long. So the effect of long exposures &#8211; with no frames &#8211; is to saturate the sensor farther and farther out from the center. That could be blurring in the atmosphere, or movements, or bleeding in the sensor. So he is seeing a truer picture of the star in size terms. His image of the star divided by the degrees of the star itself is</p>
+<p>( 34*1.258/(60*60) )/(360*2*2.73/(2*pi*3.40516e+8) ) = (0.011881)/(9.18708537e-7) = 12932.4 times larger than actual. He is closer to the true size than that Alladin image where they let it run a long time to make another &#8220;pretty picture&#8221;.</p>
+<p>I searched for &#8212; vega star &#8212; and looked for images. I picked this one because it said telescope.com which I think is respectable.</p>
+<p>https://www.telescope.com/HIP91262-The-Star-Vega/p/113352.uts</p>
+<p>He used an Omni XLT 150 with REBEKE t5i EOS 700D camera for 1/30th second at ISO 1600. So there is LOTS of light at 30 frames per second.</p>
+<p>His image is 660&#215;666 and the central saturated image is about 328-311 = 17 pixels</p>
+<p>I clipped out a 53*57 pixel area around the star and saved it to a file. I read the image in MatLab and did a histogram to see how many pixels have what values.</p>
+<hr />
+<p>It tells me that he set the exposure so that he did not saturate the sensor, and he let in enough light so that all the pixels were not perfectly black. I counted all the RGB values together in the above histogram.</p>
+<p>figure(&#8216;Name&#8217;,&#8217;red&#8217;); histogram(Img(:,:,1)); title(&#8216;red&#8217;);<br />
+figure(&#8216;Name&#8217;,&#8217;green&#8217;); histogram(Img(:,:,2)); title(&#8216;green&#8217;);<br />
+figure(&#8216;Name&#8217;,&#8217;blue&#8217;); histogram(Img(:,:,3)); title(&#8216;blue&#8217;);</p>
+<p>I usually write Javascript programs for this sort of thing. But in a hurry.</p>
+<p>Here are the three plotted together for that clip near the star<br />
+Bins = (0:255)&#8217;;<br />
+Red = Img(:,:,1);<br />
+Green = Img(:,:,2);<br />
+Blue = Img(:,:,3);<br />
+R = histc(Red(:),Bins);<br />
+G = histc(Green(:),Bins);<br />
+B = histc(Blue(:),Bins);<br />
+plot(Bins,R,&#8217;r&#8217;,Bins,G,&#8217;g&#8217;,Bins,B,&#8217;b&#8217;);</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-2086" src="/wp-content/uploads/2021/08/Histogram-of-Ryans-Vega-image-clip-together-as-line-plots-300x228.png" alt="" width="300" height="228" srcset="/wp-content/uploads/2021/08/Histogram-of-Ryans-Vega-image-clip-together-as-line-plots-300x228.png 300w, /wp-content/uploads/2021/08/Histogram-of-Ryans-Vega-image-clip-together-as-line-plots-768x585.png 768w, /wp-content/uploads/2021/08/Histogram-of-Ryans-Vega-image-clip-together-as-line-plots.png 818w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<hr />
+<p>I clipped the Vega image from Simbad at https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=Vega and ran that histogram (now it is written I just change the image).</p>
+<p>I used a log scale because all the values are shoved up at the max of the sensor pixel range (lots of 255)</p>
+<p>plot(Bins,R,&#8217;r&#8217;,Bins,G,&#8217;g&#8217;,Bins,B,&#8217;b&#8217;);<br />
+set(gca, &#8216;YScale&#8217;, &#8216;log&#8217;);</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-2089" src="/wp-content/uploads/2021/08/Counts-of-RGB-from-Clip-of-Vega-Image-from-Simbad-300x179.png" alt="" width="300" height="179" srcset="/wp-content/uploads/2021/08/Counts-of-RGB-from-Clip-of-Vega-Image-from-Simbad-300x179.png 300w, /wp-content/uploads/2021/08/Counts-of-RGB-from-Clip-of-Vega-Image-from-Simbad-768x458.png 768w, /wp-content/uploads/2021/08/Counts-of-RGB-from-Clip-of-Vega-Image-from-Simbad.png 866w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>What this tells me is that most of the intensity is right at the center of that star and what we are taking pictures of is the much less bright scattered light from off axis. I doubt it is Gaussian. But never set things in stone. I like to guess, but I always verify. So I just need ways to chop that light up in to tiny pieces, and keep close tabs on each pixel in the process. The intensity falls off in a smooth manner, I just need more samples to work from.</p>
+<p>Here is that plot with a linear Y axis. Need to cut the intensity range per image down to where it fits the sensor.  My guess is that it needs something close to that Ryans picture at 1/30th second but</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-2091" src="/wp-content/uploads/2021/08/Counts-of-RGB-from-Clip-of-Vega-Image-from-Simbad-with-Linear-Y-scale-300x210.png" alt="" width="300" height="210" srcset="/wp-content/uploads/2021/08/Counts-of-RGB-from-Clip-of-Vega-Image-from-Simbad-with-Linear-Y-scale-300x210.png 300w, /wp-content/uploads/2021/08/Counts-of-RGB-from-Clip-of-Vega-Image-from-Simbad-with-Linear-Y-scale-768x537.png 768w, /wp-content/uploads/2021/08/Counts-of-RGB-from-Clip-of-Vega-Image-from-Simbad-with-Linear-Y-scale.png 787w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<hr />
+<p>Ryans image at 1/30th second ISO 1600 was 12932.4 times larger than actual.</p>
+<p>If he were taking video frames at 30*12932.4 frames per second it would probably not saturate, and give LOTS of data to try to derive a true picture of what is out there. (30*12932.4) is 387972 frames per second.</p>
+<p>So probably center on Vega, keep some guidestars in the frame for centering and registration. Run it at high sampling rates, high frame rates, register and stack the frames. Look at the radial (outward from the center) and azimuthal (with some guideStars as reference) to see what can be gathered.</p>
+<p>I don&#8217;t try to get &#8220;an answer&#8221;. I try many small steps and work every tiny piece hard, to learn the most, and to write tools and methods that can be used generally. My goal is to have tools that every human can use. I say &#8220;human&#8221; rather than &#8220;person on earth&#8221; because soon there will be humans in space and other planets and places outside Earth.</p>
+<hr />
+<p>Vega has a rotation rate of about 12.5 hours or 360/(12.5*60) = 0.48 degree per minute. Its rotation axis is about 5 degrees from our line of sight, but I have not yet see then angle and direction. Its fast rotation implies that it will have a polar (central from our point of view) temperature of 10,200 Kelvin and an equatorial temperature (edge temperature from our point of view) of 7900 Kelvin, If there are equatorial sunspots they would move at (360/12.5) = 28.8 degrees per hour. So a thousand frames per second image sequence would need to be rotated by 0.48 degrees per minute or 8*10^-5 degrees per frame.</p>
+<p>Rapidly Spinning Star Vega has Cool Dark Equator<br />
+<a href="https://noirlab.edu/public/news/noao0603/">https://noirlab.edu/public/news/noao0603/</a></p>
+<p>In fact someone has already done the measurement, taking the rotation into account. Discovery of starspots on Vega, First spectroscopic detection of surface structures on a normal A-type star at <a href="https://www.aanda.org/articles/aa/full_html/2015/05/aa25425-14/aa25425-14.html">https://www.aanda.org/articles/aa/full_html/2015/05/aa25425-14/aa25425-14.html</a></p>
+<p>They recorded spectra over 5 nights for a total of 34.7 hours. Since the rotation rate will be stable, any stable structures on the disk will show some evidence of that in the light. The flux variations they measured were about 5*10^-4 (Watts/meter2) per total intensity in Watts/m2. They give a rotation period of 0.732 days per rotations or (0.732*24) = 17.568 hours per rotation. The important thing is the 5*10^-4 is (50E-4 * 1E6) = 5000 parts per million. That is a huge number in my world.</p>
+<p>If Ryan can get about 4*pi*17^2 = 3631.7 pixels from an inexpensive telescope and camera, then adding a 480 frames per second camera to a 100&#215;100 area would be 480*100*100 = 4.8 million pixel records per second for an off-the-shelf astrocamera (ZWO ASI).</p>
+<hr />
+<p>This SyFy.com article called &#8220;A Planet for Vega&#8221; I found by looking for &#8220;sunspots&#8221; &#8220;Vega&#8221;. That picks up Roy Vega&#8217;s song too, but I don&#8217;t know the search results well enough to exclude anything yet.</p>
+<p>&#8220;A Planet for Vega&#8221; at https://www.syfy.com/syfywire/a-planet-for-vega covers some good material. I am not particularly interested in distant planets yet, but imaging the surface and interior of distant stars fine enough to track sunspots also means this other data is going to be accessible. There is also a disk of dust orbiting Vega, apparently. And a possible planet.</p>
+<p>&#8220;vega&#8221; &#8220;sunspots&#8221; &#8220;planet&#8221; gives 189,000 entry points on Google.<br />
+&#8220;vega&#8221; &#8220;extrasolar&#8221; &#8220;planet&#8221; has 3.03 Million entry points.</p>
+<p>A giant, sizzling planet may be orbiting the star Vega at https://www.sciencedaily.com/releases/2021/03/210308112003.htm gives a journal article which I found on Arxiv.org</p>
+<p>A decade of radial-velocity monitoring of Vega and new limits on the presence of planets at https://arxiv.org/abs/2101.08801 They used ten years from what I would call a hyperspectral telescope or hyper spectral camera with a telescope attached.</p>
+<p>They say &#8220;The star is bright enough to fill the full well depth of hundreds of pixels&#8221;, so they use pixel well saturation (hitting the upper limit on the range of the digital tracking for each pixels) as a guide for planning and estimation. And they explain things in numbers of pixels affected or in certain categories. They make good use of a periodogram (looking for repeating elements) but only have a thousand frames to work with.</p>
+<p>I will see if I can find or design a low cost hyperspectral camera that can run at 100,000 frames per second. and use log intensity with a wide range and precision. Getting people to look from different directions, pooling their raw data, using good time and intensity and spectral calibration, algorithm sharing, and everyone keeping permanent records for the whole Internet (all people) makes sense.</p>
+<p>They used guideStars and reference stars nearby to calibrate the intensities.  A global look would also help &#8211; if each observer also shares their calibrations and &#8220;best practices algorithms&#8221; are shared globally &#8211; along with all the data and tools used.</p>
+<hr />
+<p>I read about MIE scattering and will keep all that in mind. I read about diffraction gratings and found this interesting page at RSpec-Astro.com where they show the spectrum for Vega take with an 8 inch telescope and a webcam.  That is at <a href="https://www.rspec-astro.com/star-analyser/">https://www.rspec-astro.com/star-analyser/</a>  but a better explanation is from Astro306 lectures by Chris Mihos and Paul Harding at Case Western Reserve University (my second university).  That is <a href="http://burro.case.edu/Academics/Astr306/">http://burro.case.edu/Academics/Astr306/</a> and the lecture about gratings and &#8220;grisms&#8221; is at <a href="http://burro.case.edu/Academics/Astr306/Lectures/Spectroscopy2.pdf">http://burro.case.edu/Academics/Astr306/Lectures/Spectroscopy2.pdf</a></p>
+<p>On page 8, I found what I was  looking for &#8212; &#8220;slitless spectroscopy&#8221; and a side by side picture of a &#8220;spectral image&#8221; and a &#8220;direct image&#8221; that show how the diffraction grating spreads every star image out into streaks of different colors. There are more examples, but they are too garish to understand easily.</p>
+<p>Thanks, Chris, for explaining &#8220;angular dispersion&#8221; in radians (or degrees or arcseconds) per Angstrom (or nanometer or meter or as eV or cm-1).    And &#8220;linear dispersion&#8221; in Angstroms per milliMeter.</p>
+<p>Angstrom/pixel = (Angstrom/degree)*(degee/mm)*(mm/pixel) and other combinations.</p>
+<p>This &#8220;Snapshot hyperspectral imaging using wide dilation networks&#8221; at <a href="https://link.springer.com/article/10.1007/s00138-020-01136-8">https://link.springer.com/article/10.1007/s00138-020-01136-8</a> explains some trade off and introduces the term &#8220;snapshot hyperspectral imaging&#8221; to indicate &#8220;a complete spectrum for every pixel&#8221; (my ideal).   And by using algorithms, not hardware (also my very very strong preference).  I am not particularly happy they use deep learning jargon, most of which is good data management, never letting any information get lost, and a willingness to incrementally learn and test and accumulate precision.</p>
+<p>It is a lot to read and translate. But they eventually chose &#8220;a transmitting double axis diffraction grating&#8221;.  On google <strong>(&#8220;transmitting&#8221; OR &#8220;transmission&#8221; OR &#8220;slits&#8221;) (&#8220;double axis&#8221; OR &#8220;two axis&#8221;) &#8220;diffraction&#8221; (&#8220;grating&#8221; OR &#8220;gratings&#8221;)</strong> gives 359,000 entry points.  And the most frequent results are two axis diffraction grating sheets with 13,750 lines per inch or 300 lines per millimeter (lines/mm).</p>
+</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

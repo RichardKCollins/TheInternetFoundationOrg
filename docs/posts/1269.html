@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#8220;Skinning&#8221; sites for users, not editors and developers &#8211; Wikipedia, Chrome, WordPress - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">&#8220;Skinning&#8221; sites for users, not editors and developers &#8211; Wikipedia, Chrome, WordPress</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-05-08</span>
+       &bull; <a href="/?p=1269" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>Ben,</p>
+<p>Wikipedia exposes all the management tools and &#8220;stuff&#8221; that the editors need.  &#8220;Everyone is going to edit and contribute knowledge&#8221;. But as a practical matter, most people just read the pages. And most editors only edit far fewer than they read.  So no need to have those extra tools and things &#8211; distracting, using up screen space, taking up download time, using client space and resources.  What is the carbon footprint of that one &#8220;policy&#8221; for the world? What is the minimum needed to share that knowledge in clear form?</p>
+<p>Here is  sketch of my first attempt to make a content script for wikipedia &#8220;skin&#8221;.  I am going to change it to make a div covering the whole screen, put it over the other stuff.  I have no way to just turn off all the extras. Same for Chrome browser.  Most of its weight is programmer development tools that should be on my computer, completely separate from my everyday browsing except when I attach the tools to browser sessions.</p>
+<p><span style="color: #0000ff;"><span style="color: #000000;">Can I</span></span> <strong><span style="color: #0000ff;">attach files and notes to a topic or item on WordPress?</span></strong>  I could have a panel for Attachments and minimize (but have available by icon with hoverbox on the upper left) the header, left panel, right panels that I seldom use.  Only bring them back when I need them.  Then I would have the screen for MY needs and project, not what WP programmers give me that suits their purposes or &#8220;good enough for those &#8220;users&#8221;&#8221;.</p>
+<p>It is a great simplification for the Internet, and clarifies the roles of programmers in society. They should be helpers and facilitators, not put their needs over others.</p>
+<p>//===========================================================<br />
+// Skin_Wikipedia<br />
+//===========================================================<br />
+function Skin_Wikipedia()<br />
+{<br />
+Hide(&#8216;mw-page-base&#8217;);<br />
+Hide(&#8216;mw-data-after-content&#8217;);<br />
+// Hide(&#8216;Content&#8217;);<br />
+Hide(&#8216;firstHeading&#8217;);<br />
+Hide(&#8216;siteNotice&#8217;);<br />
+Hide(&#8216;mw-head&#8217;);<br />
+Hide(&#8216;footer&#8217;);<br />
+Hide(&#8216;mw-panel&#8217;);<br />
+Hide(&#8216;siteSub&#8217;);<br />
+// Hide(&#8216;p-navigation&#8217;);<br />
+// Hide(&#8216;p-interaction&#8217;);<br />
+// Hide(&#8216;p-tb&#8217;);<br />
+// Hide(&#8216;p-lang&#8217;);</p>
+<p>var C = document.getElementById(&#8216;bodyContent&#8217;);<br />
+var S = C.style;<br />
+S.position = &#8216;absolute&#8217;;<br />
+S.top = &#8217;20px&#8217;;<br />
+S.left = &#8217;50px&#8217;;<br />
+S.width = &#8216;100%&#8217;;<br />
+S.height = &#8216;100%&#8217;;<br />
+return;</p>
+<p>function Hide(Id)<br />
+{<br />
+var A = document.getElementById(Id);<br />
+A.parentElement.removeChild(A);<br />
+}<br />
+}</p>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

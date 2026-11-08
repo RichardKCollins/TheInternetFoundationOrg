@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMSAL > Sungate > Heliophysics Coverage Registry (HCR) &#8211; trying to use your form, Hypernet - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">LMSAL > Sungate > Heliophysics Coverage Registry (HCR) &#8211; trying to use your form, Hypernet</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2023-07-31</span>
+       &bull; <a href="/?p=10797" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <div class="default-style">I am trying to use this form at https://www.lmsal.com/get_aia_data/</div>
+<div class="default-style"></div>
+<div class="default-style">
+<p>At https://sdo.gsfc.nasa.gov/data/dataaccess.php there is a link to &#8220;Web-based form&#8221;</p>
+<p>It wants my name, title and email but the form will not let me enter those.  There is no &#8220;login&#8221;</p>
+<p>Considering the difficulty entering things in the form is there a URL based access to the same information? Where I can enter a URL precisely and ask for the information.</p>
+<p>Having never seen the output from the form, I am not sure what it is going to produce.</p>
+<p>I am looking for 4096&#215;4096 Fits AIA</p>
+<p>I would rather have another format that is universal on the Internet. The various FITS tools are scattered all over the Internet, mostly undocumented and none really flexible.</p>
+<p>I did find http://jsoc.stanford.edu/AIA/AIA_lev1.html</p>
+</div>
+<div class="default-style">and managed to download a few images. But it was a clumsy and painful process.  I could not find he syntax for queries, so I had to do them one by one, and never sure what was happening.</div>
+<div class="default-style">
+<p>If you want the 5 Billion humans with some access to the Internet to see your data and actually use it.  You need to not try to force them all to be programmers, and to have your tools.  The data should be usable by the most number of humans in all countries from the Internet.   That means pretty much you have to use HTML/CSS/Javascript and those methods, not your own.</p>
+<p>I simply need 6 4096&#215;4096 full disk images in sequence for each  94 Å,131 Å,171 Å, 193 Å, 211 Å, 304 Å, 335 Å taken at a<strong> cadenec</strong> of 12s and 3 of the corresponding 1600Å, 1700Å taken with a cadence of 24s.</p>
+<p>It can be older data, I am not trying to be real time.  I am just trying to teach about solar image processing &#8211; NOT forcing people to buy certain computers, install certain operating systems, install certain languages tools libraries.  And spend months or years just getting started.</p>
+<p>If you had a URL, then javascript can process images &#8211; if a memory (json, pickle, tsv) format is used that Javascript can directly use or parse with one liner.  Querying regions makes sense too, so this one would be good &#8212; if it had a &#8220;format option&#8221; and I could get it to work at all.</p>
+<p>I have spent hundreds of hours the last few months testing GPT type AI interfaces.  They can process documenation and answer questions.  So taking all your cryptic and often incomplete pages like https://www.lmsal.com/get_aia_data/about_get_aia_data.html and hundreds more needed to try to use your data might be collapsed to &#8220;What can we help you with&#8221; &#8211; starting with please log in or register and tell us about yourself.</p>
+<p>Richard Collins, The Internet Foundation</p>
+<hr />
+<div>
+<p>Nabil,</p>
+<p>I am looking at<strong> https://www.lmsal.com/cruiser </strong>which seems to only export in MP4.  The images are giving in PNG, but not sure if that is lossless. If I select 1700 AIA and click export, it should create a name with data and band information not &#8220;download.png&#8221;</p>
+<p>When I select 171 AIA and click context, it loads BLOS HMI again and shows only that.  Not what I  would expect from &#8220;context&#8221;.</p>
+<p>The PNG data is 1024&#215;1024 and highly compressed.  It says 32 bit depth but the compression is so high likely only a few bits per pixel. There are both lossy and lossless versions of PNG on the Internet.  No way to tell which one this might be.</p>
+<p>It loads a lot of images at the beginning. That is probably only useful to the people who wrote the page. Any new person would want to know what data, what sizes and format, if lossless or not.  Looking at MP4 lossy or jpeg is like looking at glossy photos.  They might look pretty, but none of the pixels are the right values.</p>
+<p>This is not going to be useful.  I am sure there are a few percent of people who would play with it, but I would discourage them, since this is not a tool kit that remembers settings, and shares visualizations.</p>
+<p><strong>Helioviewer</strong> has more features, but I see no way to write algorithms for colors or pixel level operations.  No statistics</p>
+</div>
+<div class="default-style">
+<p>What is the format for Jpeg2000 used?  There are many now.  Is this set for lossless? Not just high quality but where the original FITS exact pixel values can be recovered.  I cannot read these images, and you so not have a viewer or editor or export.</p>
+<p><strong>The download is only jp2 and that is useless.  I would rather have FITS or insert my own format.</strong></p>
+<p>I like the differences but cannot get them to work continuously.  There are no clear instructions.</p>
+<p>I cannot find how to REMOVE a layer once added.  I can only use the slider to make it zero. but not remove it.</p>
+<p>I have used Helioviewer before.  Nice to look at for a few minutes, but none of the data is accessible, and all the formats are lossy.  No way to share layouts and setting with others as I can tell.</p>
+</div>
+<div class="default-style">
+<p>ONE TINY pixel statistic tool would make a huge difference. Really not useful for machine learning, since the lossy formats are going to screw up all the correlations.I looked at the cutout service, but that has hardware and software dependencies and many manual steps. and LOTS of reading. The VSO link worked, but is was another unexpected page. I tried the download and got the image. But it did not do the cutout.  I only got 1024&#215;1024 FITs full disk.</p>
+<p>This is hard working blind.  I think the whole mess of &#8220;solar data&#8221; on the Internet ought to be pre-compiled by the language AIs with added database and tool interfaces and made available to all 5 Billion people using the Internet.  As it is now, I doubt the many fragments and many duplicate and not clear if they are working interfaces can be combined virtually, not by manually created links and still more pages pointing in too many directions.</p>
+<p>Richard Collins, The Internet Foundation</p>
+<hr />
+<div>
+<p>Nabil,</p>
+<p>Thank you for the answers.  I have been working about 12 hours today and just cannot make myself go more.  I used to work 18-20 hours now I am just getting too old I guess.</p>
+<p>I am going to find some way to read the JP2 files and play more with <strong>VSO Time / Instrument Search Form</strong></p>
+<p>https://sdac.virtualsolar.org/cgi/search?time=1&#038;inst_only=1&#038;version=current&#038;build=1</p>
+</div>
+<div class="default-style"></div>
+<div class="default-style">
+<p>No details for the data from each solar data group.  I hate having to build documentation for sites and pages that ought to know better.  There are millions of pages that link to solar data now and they are, collectively, a mess.  So many groups doing their own thing and they all seem to think that the Internet is self-organizing and self-maintaining. It is not. People dump all kinds of stuff on the Internet.</p>
+<p>The JP2000 format was supposed to be a lossless image format, but immediately people started playing games. When the JP2 images get created they can be completely lossless, and the exact FITS raw data recoverable. But most people see &#8220;jpeg&#8221; and they say &#8220;oh that is for pretty pictures and compression so it still looks OK to humans&#8221;. And they use the quality settings and make it look &#8220;good enough&#8221;, but human eyes are terrible astronomical and radiometric and machine vision instruments. Information is information, compress and throw out data and you get less information.</p>
+<p>I am really too tired to address all your answers now.  I will have to try it in the morning or later tonight.</p>
+<p>Your answers got me to some good places, but while I have more than 5 decades using computers and data systems, most of the people in the world do not, and do not want to. But about 1 in 1000 or 8 million are interested in science and math.  Give some data, and basic tools they can study the light and data from the sun and may collectively make more sense out of it.  I am also working on all the star and planet data.  All the nuclear data. All the software and models. All the climate data.  Everything on the Internet.  I think each group ought to clean up the mess they make on the Internet, but just telling them take time. Let alone getting people moving in useful directions.</p>
+<p>Richard</p>
+<hr />
+<div>Nabil,</div>
+<div class="default-style"></div>
+<div class="default-style">Thanks for the links and discussion.  I feel like I made a bit of progress.  People who work on things every day know where most of the pieces are, and have memorized the names.  They know the dead ends and things to avoid. They know where most of he good stuff is.</div>
+<div class="default-style"></div>
+<div class="default-style">Remember when cities had no GPS maps?  You either memorized all the pathways, or you had a taxi driver take you somewhere.  Or you wrote down a long series of steps.  But with GPS navigation software, it would whisper the directions to you.  &#8220;In 100 meters, turn right.&#8221;</div>
+<div class="default-style"></div>
+<div class="default-style">With software, though, we really do not want to have to do that. We want the computer to be self-navigating. We want the computer to drive itself, just like cars.  Those machines should know what to do and just do it.</div>
+<div class="default-style"></div>
+<div class="default-style">
+<p>Right now, we do not even have navigation maps for the Internet. We get in our browsers and start driving. When we get to a site, we look around for signs and pathways, and often have to click randomly just to see what happens.  EVERY page on the internet uses different strategies and conventions.  All the signs are different colors and shapes.  There are no uniform practices. Inside the pages, the content is coded different everywhere.  &#8220;The mass of the sun&#8221; is listed thousands of times in many places, and it different in every location by a bit. &#8220;The speed of light&#8221; has millions of locations and it is often approximated.  There is only one &#8220;speed of light&#8221;, but all instances where is it used do NOT link to ONE authoritative node that has all &#8220;speed of light&#8221;.</p>
+<p>Groups like &#8220;solar data users&#8221; could put in some effort and reduce the number of pages.  What that means is when a new page is added, it has to go to all the existing pages and replace what is there with an update.  If &#8220;speed of light&#8221; is one token on the Internet, where-ever it is used, that always links to one concept, one reference value and all the background information.  Google and the search engines only take you to a location now.  Kind of like a hypher jump.  It does not give you any sense of perspective.  You are just somewhere else, and have to look around to orient yourself.  Google makes no effort to map topics as the people who use knowledge use it.  They are just making money from your clicks.</p>
+<p>GOES images of the earth they just made bigger and bigger jpeg images, all lossy. So the pixel data is all wrong and does not match the original images. And some yahoo put the country outlines over the images wiping out those pixels.  No links to the background information, not even FITS, which is hard to read and itself not particularly stable or supported globally.</p>
+<p>8 Billion is a lot of people,  At one per second that is 8E9/(365.25*86400) = 253.504702512 mean solar years just to list them all and by then there are many times more.</p>
+<p>Sorry to ramble.  I will just keep plugging away and try to raise a tiny bit of awareness.  I would much rather use the data, much of which is really wonderful stuff.  But then I think of 5 billion humans now struggling to find things on the internet and keep trying to simplify the steps, and reduce the massive amount of memorization and reading and dead ends.</p>
+<p>I think it would help if all the references to the same thing were already pre-compiled and pre-indexed.  There is only one &#8220;speed of light&#8221;.  It might vary in each location because of local potentials, but the tag on the Internet should not keep changing.  All uses of the tag (token) should be the same and link to one hypernetwork of humans and AIs that recognizes you and helps you.  Not thousands or millions of separate groups for everything, but all people interested in any one thing all linked as part of the fabric of the hypernet.  It is not complex, but it needs effort and time.</p>
+<p>How do we train 8 billion humans to use a new system, or to give them enough basic skills they can all use all knowledge, without having to memorize old stuff for 20 years, and it is out of date when memorized?  I think I know some of the right ways to go, but there are so many pieces and they are all coded different. LOL!</p>
+<p>Thanks for listening.  Thanks for your help.</p>
+<p>Richard</p>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

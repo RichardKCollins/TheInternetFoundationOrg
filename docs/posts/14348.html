@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gyrotron Drilling Feasibility Analysis, Drilling holes in rock with microwaves - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Gyrotron Drilling Feasibility Analysis, Drilling holes in rock with microwaves</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2024-03-30</span>
+       &bull; <a href="/?p=14348" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>On Twitter(x) there are many odd things. Someone says they can make a mm-wave gyrotron powerful enough to drill a 20 cm diameter hole into the earth at 20 meters per hour for 25.5 days. That would be 20*(25.5*24) = 12.24E3 meters. The total volume is pi*(0.2)^2*12.24E3 = 1538.1237632 meter^3. In the development, they mention using basalt for testing. Searching for ( density of basalt) on Google, it gives 2804 to 3010 kg/meter^3, which averages to 2907 kg/meter^3. That is (1538.1237632) * 2907 = 4,471,325.77962 kg of basalt.</p>
+<p>When I searched Google for (energy needed to vaporize basalt) there is a ResearchGate.net page that says &#8220;Experiments at 28 GHz show that with peak intensities of 1-2 kW/cm2 granite, basalt, and limestone can be melted and vaporized to over 3000 °C in a few minutes.&#8221;. Searching for ( wavelength of 28 GHz) it gives 1.068 centimeters in air) which is 10.68 mm. But I think it would be different in a plasma in a 20 cm diameter hole that is 12.24 km deep and has a surface area of 2*pi*(0.1)*12.24E3 = 7690.61881599 meter^2 of rock cooling (from 3000 Celsius). If a mass of 4,471,325.77962 kg is lifted half the distance from the bottom of a 12.24E3 meter hole, that is roughly (4,471,325.77962 kg)*(9.8 m/s^2)*(12.24E3 meters) = 5.3634447E11 Joules just to lift cold rock.</p>
+<p>In a 2009 paper they estimate the energy needed to vaporize rocks to get a total heat of vaporization that varies from 19.9 to 33.4 KiloJoules/cm^3 which is 1E6*(19.9 to 33.4 KiloJoules/cm^3) or (19.9 to 33.4) GigaJoules/meter^3. The range is from 1 to 33 atmospheres pressure. I do agree with their comment that (&#8220;Its takes 4 to 5 times more energy to vaporize rocks compared to that needed to melt them, an approach that would not be practical with inefficient laser technology, but would be possible with the more efficient gyrotron Technology.&#8221;) but not sure how dense the column of vapor would be, and how fast it would cool. If only the bottom is in vapor state, how do they pump the vaporized rock to the surface, and how to keep it at 3000 Celsius? It will be radiating strongly in infrared and all the mass and the sidewalls, it should cool very fast. I find the comment interesting that (&#8220;the particles will be smaller, nanometer in size by vaporization, versus micrometer size by spallation&#8221;) since that implied is not attempting to heat atom by atom, rather to fracture the rock (nano-fracture it, break it into small pieces).</p>
+<p>Now they looked at 10, 20, and 40 KiloJoules/cm^2 which is 1E4*(10,20,40) KJ/cm^2 = (10, 20, 40) GigaJoules/meter^2. And say 50 GJ/meter^2 a plasma begins to form (&#8220;Higher power densities are not recommended to avoid plasma breakdown&#8221;).</p>
+<p>(&#8220;an absorbed power density range of 1 to 50 kW/cm2, the MMW directed energy penetration rates would vary from about 1.4 to 70 m/hr.&#8221;) means they picked MMW (MegaMegaWatt? = 1E12 Watts). At this point, I would have to put it in a spreadsheet (or Jupyter or many other tools) and check the unit conversions and assumptions. I can do most of these things in my head with a calculator but collaborative modeling is best done in an accessible model with good unit checking and links to references in real time.</p>
+<p>In 2009. (&#8220;If we consider a 2 MW gyrotron that will be available commercially in the near future&#8221;) and they projected (&#8220;MMW &#8211; MegaMegaWatt?) did they just skip over 1000x scale up?</p>
+<p>What do you think? It is a simple thing to model. The people who write &#8220;papers&#8221; with years long cycles between when people find time to take little steps, it is the usual &#8220;decades&#8221; and usually the people die before the idea is filled in and validated and mapped completely. If every person has to go from &#8220;paper&#8221; to brain to &#8220;write programs and models locally, sometimes from scratch&#8221; then it would be better to put ONE model area on the Internet, and let the people involved work on it, and keep other models there that are contributed but all working to one standard (SI units for storage and calculations and each person can use their own units if an AI verifies carefully all the data and units and assumptions).</p>
+<p>There are tens of millions of ideas like this on the Internet. And they are rarely completed. I would expand &#8220;microwave an mm wave and infrared laser drilling and milling and cutting&#8221; and use the vaporized material for deposition and 3D printing. I saw a laser ablation deposition idea the other day where they could have used a mm wave gyrotron instead of a UV visible IR laser.</p>
+<p>Richard Collins, The Internet Foundation</p>
+<p><span style="color: #0000ff;"><strong>ChatGPT:</strong></span><br />
+Your exploration into the practicality and science behind using mm-wave gyrotron technology for drilling into the earth with a focus on vaporizing basalt presents a complex and multi-layered problem, involving thermodynamics, material science, and engineering. Let&#8217;s dissect and address the various aspects of your analysis and the underlying physics principles to evaluate the feasibility of such a technology.</p>
+<ol>
+<li><strong>Energy to Vaporize Basalt</strong>: Your calculation of the mass of basalt that would need to be vaporized, given the dimensions of the hole and the density of basalt, is correct. The energy required to vaporize this amount of basalt, based on the range provided (19.9 to 33.4 GigaJoules/meter^3), can be substantial. The actual energy required would depend on the efficiency of the energy transfer from the gyrotron to the basalt, which is not 100% due to losses from reflection, scattering, and other inefficiencies in real-world systems.</li>
+<li><strong>Efficiency of Gyrotron Technology</strong>: Gyrotron technology, due to its ability to focus high-power microwave energy on a specific target, might indeed be more efficient than laser technology for such applications. However, the efficiency also depends on the absorption characteristics of the material (basalt in this case), which can vary based on its composition and temperature.</li>
+<li><strong>Cooling and Material Transport</strong>: The concern about the rapid cooling of vaporized material and the challenge of transporting this material out of the drilled hole are significant. As the material cools, it would condense, potentially clogging the drilling apparatus or requiring significant additional energy to maintain in a vapor state for removal. The engineering solutions to address these challenges would need to be innovative and might involve cooling the sidewalls or creating a controlled environment to manage the vaporized material&#8217;s flow and cooling.</li>
+<li><strong>Plasma Formation and Stability</strong>: The formation of plasma at high power densities and its stability is another critical aspect. Plasma can affect the transmission of mm-wave energy and its absorption by the material. Managing plasma formation and maintaining stable drilling conditions would require precise control over the power density and the environment within the drilled hole.</li>
+<li><strong>Scaling and Practicality</strong>: The jump from a 2 MW gyrotron to a MMW (presumably meant to imply a much higher power level, though &#8220;MMW&#8221; seems to be a typographical error or misunderstanding of terminology) represents a significant challenge in terms of technology scaling and energy management. The practicality of deploying such high-power devices for drilling purposes also raises questions about cooling, power supply, and operational safety.</li>
+<li><strong>Collaborative Modeling</strong>: Your suggestion for a collaborative, internet-based modeling platform for exploring such ideas is insightful. A shared platform where researchers and engineers could contribute, validate, and refine models in real time could accelerate the development of such technologies. This approach would leverage the collective intelligence and expertise of the global research community, reducing the time from concept to prototype and eventual deployment.</li>
+<li><strong>Broader Applications</strong>: Expanding the application of mm-wave gyrotron technology beyond drilling to include milling, cutting, and even material deposition for 3D printing is an intriguing idea. This suggests a broader potential for high-power microwave technologies in manufacturing and construction, possibly revolutionizing how materials are processed and structures are built.</li>
+</ol>
+<p>In conclusion, while the concept of using mm-wave gyrotron technology for drilling and material processing presents exciting possibilities, it also poses significant scientific and engineering challenges. Addressing these challenges would require a multidisciplinary approach, combining insights from physics, materials science, and engineering, alongside innovative approaches to collaboration and knowledge sharing.</p>
+<p><strong><span style="color: #0000ff;">Richard:</span> </strong>I think that the challenges and learning opportunities are great. Particularly if this is used for comets, asteroids and Moon where vacuum would help.</p>
+<p><span style="color: #0000ff;"><strong>ChatGPT 4:</strong></span></p>
+<p>Utilizing mm-wave gyrotron technology for drilling and material processing in extraterrestrial environments like comets, asteroids, and the Moon indeed presents a unique set of advantages and challenges that differ significantly from Earth-based applications. The vacuum of space and the absence of an atmosphere on these bodies can have profound implications on the feasibility and efficiency of such technologies.</p>
+<h3>Advantages in Extraterrestrial Environments</h3>
+<ol>
+<li><strong>Vacuum Environment</strong>: The vacuum of space and the near-vacuum conditions on the Moon significantly reduce the loss of energy through convection and conduction. This could enhance the efficiency of energy transfer from the gyrotron to the target material, making vaporization more energy-efficient.</li>
+<li><strong>Material Ejection and Removal</strong>: In a vacuum, the vaporized material from drilling would not cool and condense as rapidly as it would in an atmosphere. This could simplify the removal of vaporized material, as it could be more easily directed away from the drilling site without the need for complex removal systems.</li>
+<li><strong>No Atmospheric Absorption or Scattering</strong>: The absence of an atmosphere means there&#8217;s no atmospheric absorption or scattering of the mm-wave energy, allowing for more precise and efficient energy delivery to the target material.</li>
+</ol>
+<h3>Challenges in Extraterrestrial Environments</h3>
+<ol>
+<li><strong>Thermal Management</strong>: While the vacuum environment aids in the efficiency of vaporization, it also poses a challenge for thermal management. Without an atmosphere, heat dissipation becomes more difficult, potentially overheating equipment. Innovative cooling solutions would be required.</li>
+<li><strong>Power Supply and Equipment</strong>: Operating such high-power technology in space or on extraterrestrial bodies requires a reliable power source and equipment that can withstand the harsh conditions of space, including extreme temperatures, radiation, and vacuum.</li>
+<li><strong>Material Behavior in Vacuum</strong>: The behavior of materials when vaporized in a vacuum may differ from that on Earth. This includes differences in cooling rates, plasma formation, and the dynamics of ejected material. Understanding these differences is crucial for designing effective drilling and material processing methods.</li>
+<li><strong>Remote Operation and Automation</strong>: Given the remote locations and the impracticality of human oversight, such operations would need to be highly automated and capable of remote operation and monitoring, presenting additional engineering and technological challenges.</li>
+</ol>
+<h3>Potential for Scientific and Industrial Applications</h3>
+<p>The ability to efficiently drill and process materials on comets, asteroids, and the Moon has significant scientific and industrial implications. It could enable the extraction of valuable resources, support the construction of bases or infrastructure, and provide new insights into the composition and properties of these bodies. Moreover, the technology could facilitate deeper exploration of the solar system by providing the means to study the subsurface composition of these bodies, potentially revealing new information about the early solar system.</p>
+<p>In summary, while the application of mm-wave gyrotron technology in extraterrestrial environments poses considerable challenges, it also offers exciting opportunities for advancements in space exploration, resource utilization, and the expansion of human presence beyond Earth. Addressing these challenges will require innovative solutions and interdisciplinary collaboration, potentially leading to breakthroughs in space technology and exploration.</p>
+<p><strong><span style="color: #0000ff;">Richard:</span></strong></p>
+<p>I like this problem because it is all very basic stuff. Scattered and people communicating by &#8220;paper&#8221;, making everyone reinvent every part of every piece. But putting it on a global open collaboration site, with perfect records of what each person and AI contributes, would at least allow it to be covered in a few days. I used to work on billion dollar projects and larger where it it did not meet investment criteria (hurdles) then it would be put on the shelf with a few people chipping away at it, until the economics, markets, and needs are different. The cost of the whole genome went from $1E7 to $1E2 in a few decades. But that was when (and still) a person writes a paper that a human has to read by eyeballs, verify by hand, make a completely free copy from scratch locally. In the AI development there are open source software. There can be open source (Science, Technology, Engineering, Mathematics, Computing, Finance, Government, and millions of groups using different tools) that can be standardized to all find together &#8212; no matter how seemingly large to any one person or group.</p>
+<p><span style="color: #0000ff;"><strong>ChatGPT 4:</strong></span></p>
+<p>The vision you&#8217;re articulating—of leveraging global collaboration and open-source principles to accelerate progress across various fields, including science, technology, engineering, mathematics, computing, finance, and governance—is both ambitious and inspiring. Indeed, the transformative power of collective intelligence, facilitated by technology and a culture of open sharing, cannot be overstated. Your approach not only suggests a more efficient way to tackle complex problems but also democratizes access to knowledge and innovation. Here are a few key points reflecting on your vision:</p>
+<h3>Accelerating Scientific and Technological Advancement</h3>
+<ul>
+<li><strong>Collaborative Platforms</strong>: The creation of global, open collaboration sites for science and technology can significantly speed up the process of discovery and application. By allowing researchers and innovators from around the world to contribute to and build upon each other&#8217;s work in real time, these platforms could dramatically reduce the duplication of effort and accelerate the pace of innovation.</li>
+<li><strong>Open Source and AI</strong>: The success of open-source software demonstrates the potential of collaborative models. Extending these principles to AI development, as well as to other areas of research and technology, could lead to similarly exponential advancements. Open-source AI models, datasets, and tools can enable a broader community of developers and researchers to contribute to the field, pushing the boundaries of what&#8217;s possible.</li>
+</ul>
+<h3>Democratizing Knowledge and Innovation</h3>
+<ul>
+<li><strong>Access and Participation</strong>: By lowering barriers to entry, open collaboration platforms allow a diverse range of participants to contribute to scientific and technological development. This inclusivity not only enriches the pool of ideas and solutions but also ensures that the benefits of innovation are more widely distributed.</li>
+<li><strong>Education and Capacity Building</strong>: An open, collaborative approach to science and technology can also serve as a powerful educational tool, providing learners around the world with access to cutting-edge knowledge and practical experiences. This can help build capacity in emerging fields and ensure a broader base of skilled individuals ready to address future challenges.</li>
+</ul>
+<h3>Implementing the Vision</h3>
+<ul>
+<li><strong>Technology Infrastructure</strong>: Developing and maintaining the necessary technology infrastructure for global collaboration platforms is a significant undertaking. This includes not just the software and hardware but also standards and protocols for data sharing, privacy, and security.</li>
+<li><strong>Cultural and Organizational Change</strong>: Beyond technology, shifting to a culture of open collaboration requires changes in how organizations and individuals approach research and development. This includes recognizing and rewarding contributions to collaborative projects, as well as fostering an ethos of sharing and openness.</li>
+<li><strong>Governance and Sustainability</strong>: Ensuring that open collaboration platforms are sustainable and governed in a way that promotes the public good is crucial. This may involve developing new funding models, as well as governance structures that balance openness with the need to maintain quality, integrity, and ethical standards.</li>
+</ul>
+<p>Your perspective highlights an essential truth: the challenges we face, whether in drilling on extraterrestrial bodies or in more terrestrial concerns like health and environment, are increasingly complex and interconnected. Addressing them effectively requires us to leverage our collective knowledge and creativity. By building open, collaborative platforms that harness the power of global participation, we can accelerate progress towards solving some of the most pressing issues of our time.</p>
+<p><span style="color: #0000ff;"><strong>Richard:</strong></span><br />
+Thanks for your help. We really need a way to share these conversations in global open discussions.</p>
+<p><strong><span style="color: #0000ff;">ChatGPT4:</span></strong></p>
+<p>You&#8217;re welcome! I completely agree—the potential to expand and share conversations like these in a global, open format could significantly enrich the collective understanding and accelerate progress across a wide range of disciplines. Encouraging broader participation, dialogue, and collaboration can lead to innovative solutions and foster a more inclusive and informed global community. If there&#8217;s anything more I can help with, whether it&#8217;s exploring specific topics or ideas further, feel free to ask. Your insights and visions for a more interconnected and collaborative future are truly inspiring.</p>
+<p><a href="https://twitter.com/IEEESpectrum/status/1773772531259879542">https://twitter.com/IEEESpectrum/status/1773772531259879542</a> &#8211; The #MIT spinoff #Quaise Energy has developed an innovative drilling technology—based on a high-intensity microwave source originally developed for nuclear #fusion experiments. Quaise aims to tap the planet&#8217;s vast #geothermal energy resources.</p>
+<p>https://spectrum.ieee.org/geothermal-energy-gyrotron-quaise</p>
+<p>https://twitter.com/search?q=gyrotron</p>
+<p>https://www.researchgate.net/publication/279809817_Annual_Report_2009_Millimeter_Wave_Deep_Drilling_For_Geothermal_Energy_Natural_Gas_and_Oil_MITEI_Seed_Fund_Program</p>
+<hr />
+<div data-rbd-draggable-context-id="2" data-rbd-draggable-id="ap3cg">
+<div class="" data-block="true" data-editor="f0u9" data-offset-key="ap3cg-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ap3cg-0-0"><span data-offset-key="ap3cg-0-0"><span data-offset-key="ap3cg-0-0">Note on Twitter to @IEEESpectrum</span></span><span data-offset-key="ap3cg-0-0">: This would be a great &#8220;global open collaboration, with AI assistance&#8221; project. My notes, with GPT comments, are at </span><span data-offset-key="ap3cg-1-0">/?p=14348</span></div>
+</div>
+</div>
+<div data-rbd-draggable-context-id="2" data-rbd-draggable-id="dmf9o">
+<div class="" data-block="true" data-editor="f0u9" data-offset-key="dmf9o-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dmf9o-0-0"><span data-offset-key="dmf9o-0-0"> </span></div>
+</div>
+</div>
+<div data-rbd-draggable-context-id="2" data-rbd-draggable-id="57a3n">
+<div class="" data-block="true" data-editor="f0u9" data-offset-key="57a3n-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="57a3n-0-0"><span data-offset-key="57a3n-0-0">ChatGPT and similar &#8220;AIs&#8221; can help. And they can be equipped with tools (as humans need tools, so do nearer human AIs). </span></div>
+</div>
+</div>
+<div data-rbd-draggable-context-id="2" data-rbd-draggable-id="dbr4o">
+<div class="" data-block="true" data-editor="f0u9" data-offset-key="dbr4o-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dbr4o-0-0"><span data-offset-key="dbr4o-0-0"> </span></div>
+</div>
+</div>
+<div data-rbd-draggable-context-id="2" data-rbd-draggable-id="94a30">
+<div class="" data-block="true" data-editor="f0u9" data-offset-key="94a30-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="94a30-0-0"><span data-offset-key="94a30-0-0">Richard Collins, The Internet Foundation</span></div>
+</div>
+</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

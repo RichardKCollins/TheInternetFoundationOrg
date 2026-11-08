@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>With low cost 3 axis time of flight gravimeter arrays one can have gravitational GPS and compass, and 3D gravity imaging - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">With low cost 3 axis time of flight gravimeter arrays one can have gravitational GPS and compass, and 3D gravity imaging</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2024-10-07</span>
+       &bull; <a href="/?p=17894" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p><em>https://www.facebook.com/reel/1720010422134224</em></p>
+<p>https://x.com/RichardKCollin2/status/1843388114640699822</p>
+<p><strong>My Comments:</strong><em> With low cost 3 axis time of flight gravimeter arrays one can have gravitational GPS and compass, and 3D gravity imaging</em></p>
+<p>When you calculate the vector acceleration of the sun at a superconducting gravimeter station on earth, you have to use the position of the sun for the time when the gravitational potential changes left the sun, and moved at the speed of light and gravity to the station.  It is a vector in earth centered coordinate (what I use, there are other coordinates that work too).</p>
+<p>And if you do not adjust for the speed of gravity, the measurements are so precise, even using decades old technology, that it won&#8217;t match what the station measures.</p>
+<p>Take the station location and compute the 3D position of the sun when the gravitational signal left the sun. Calculate the three axis acceleration. Do that for the sun acting on the center of the earth. Subtract them. Do the same for moon acting on the station and on the center of the earth. Subtract them. Do the same for the earth acting on the station. Add up those vectors. You can use the WGS84 ellipsoid and the station location to calculate the centrifugal acceleration due to earth rotation. Add that vector.. Change to station centered coordinates. Now use a linear regression to match each axis. It just needs an offset and multiplier. The gravitational potential flows are not nonlinear.  You can measure every hour and calibrate to the sun and moon. The lines of the signal are so close, you cannot see the difference if you plot them.</p>
+<p>You have to use a three axis sensor with about 1 angstrom per second^2 resolution. A MEMS gravimeter will work if you put some effort into it. A three axis broadband seismometer works. Atom interferometers work, atomic force detectors work, Bose Einstein gravimeters work. Electrochemical gravimeters work. Most &#8220;quantum computer components&#8221; can be adapted to work. You can adapt most &#8220;quantum devices&#8221; to work. I found most of them.</p>
+<p>So what is it good for?  Well it is a poor man&#8217;s way to measure the speed of gravity. If you do not correct for the speed, it won&#8217;t fit. You get big residuals. If you assume the speed of light and then move around the speed of light, there will be speeds that reduce the residuals. If the axes at your station do not match the geometric earth centered coordinates, then you can solve for the orientation and position of the sensor that reduces the residuals. (I had to do that with some seismometers that were just put in position but not lined up.)</p>
+<p>So what else is it good for? The position can be made as precise as GPS over time. Usually these things run for decades.  It makes your readings tied to the sun and moon so you can use gravitational sensors as a single array over the whole earth. If you take any one station it wanders. But you can easily (data from NASA Jet Propulsion Labs, a Javascript program in your browser for the calculations, and your sensor).</p>
+<p>The superconducting gravimeters cost about $250,000.  The MEMS and atom intereferometer gravimeters are about $2500 but retail is about 10 times that.</p>
+<p>I have tried to write is all down. It took me a years to get it right. Then half a year working every day to go through all the IRIS.edu seismometers to find which ones were sensitive enough, set up properly, in quiet places, and all three axes clear enough.</p>
+<p>The Japan earthquake registered on both the superconducting gravimeter and the broadband seismometers as a speed of light and gravity signal.</p>
+<p>If you can get someone to make a fast detector (it is possible but I cannot afford even the low cost ones now) You can use correlation to track things like earthquake seismic signals in real time. And scan the atmosphere. And scan the currents in the ocean. And scan inside the earth.</p>
+<p>I do not think I will get to see those. I am just getting too old, too quickly now. Life has harsh choices. I could do a handful of the problems at global scale myself, or I could try to set rules and policies for the whole Internet. But the gravitational potential I used and worked on and came to understand over 55 years. It is shocking how much can be done with global arrays of low cost sensors and many groups. Rather then put all earth eggs in a few baskets or one &#8211; controlled by a few.</p>
+<p>Richard Collins, The Internet Foundation</p>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

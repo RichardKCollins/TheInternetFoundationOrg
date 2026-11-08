@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image handling on the Internet, Pixels around a star - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Image handling on the Internet, Pixels around a star</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-08-02</span>
+       &bull; <a href="/?p=2054" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>Thanks for the links. I spent the last few days going over the NexGen Level 3 Weather radar system. I downloaded many example datasets and tried to review and organize all the parts of it. Looking to see how to integrated radar, satellite, SDR (electromagnetic networks of many sorts), GPS and other sensor networks and models.</p>
+<p>I also looked at multispectral cameras of many sorts. Particularly for soft x-rays. The ones that monitor the pulse shape for each pixel are most interesting to me.</p>
+<p>Did some tiny experiments with trying to combine images from different sources for things like M64. If a person takes a photo and shares it, not much happens, but a few brain cells stimulated in each person who views it. But if the raw images are combined and studied over an extended time with different methods, then it might become &#8220;science&#8221;, &#8220;knowledge&#8221;, &#8220;sharing&#8221;.</p>
+<hr />
+<p>Looking at several M64 photos on the Internet. They are all jpg so NONE of the pixels match what the sensor recorded.</p>
+<p>The problem is not only the gathering of the images and their processing &#8211; but the way they are presented on the Internet. I want to change the Internet, so EVERY image can be measured, processed for statistics and machine vision algorithm development, merged and compared.</p>
+<p>That galaxy is rather hazy. When it is processed and presented in the same way as the background, then neither is good. JPEG compression always mixes things that are close together in angular space, but far in real space and values.</p>
+<p>If the background were kept on a different layer than the foreground, or many separate layers were handled with a presentation and analysis tool, then I think that M64 would be more powerful and useful. To me it looked faded and washed out. I know the background is completely filled with light of many colors.</p>
+<hr />
+<p>I was looking at this one star near M64. It shows up with light out to 50 pixels around the center. I would like to study the statistical distribution of light at various angular distances from a star, or chosen center point. I think I can make a generic tool for taking that to recover the best image of each star or light source or place. I don&#8217;t care if it takes the computer days to process. My programs end up being rather fast. If I hit a hard processing problem, I build a computer to suit.</p>
+<p>Have you ever tried to use maximum magnification on a star for a long time? I want to see if sunspots and prominences are possible. At least for the brighter stars. Or how far planetary and lunar photos can be pushed. Just averaging does not work. But I keep ALL the data and work with it as a single entity, and it can often break up into manageable and understandable parts.</p>
+<hr />
+<p>It would depend, somewhat, on the main colors and composition of the star. I want to measure all the frequencies of light, not just slice out one color. I will look for a way. &#8220;Single pixel cameras&#8221; is one method. I just wanted to see how far an ordinary camera, no special filtering, could be pushed. If you look by eyeball, your eye is too slow to separate out things. Or cannot distinquish levels. The variation of the atmosphere is too fast to follow by eye and it won&#8217;t wash out with simple averaging as far as needed. The reason I keep pushing for the 100,000 frames per second region of interest cameras, is that the star is bright enough to register enough pixels &#8211; if all frames are registered to subpixel level.</p>
+<p>I have been working at subpixel level for several years now and am comfortable with most all the methods that have been tried or proposed. Mostly they call it &#8220;super-resolution&#8221;, but there are dozens of aliases &#8211; all saying that centroids are easier to track than pixels.</p>
+<hr />
+<p>Sometimes I hate that the solar and stellar groups cannot get their act together. They are a bunch of yahoo&#8217;s each doing their own thing.</p>
+<p>https://umbra.nascom.nasa.gov/images/<br />
+https://soho.nascom.nasa.gov/data/realtime-images.html</p>
+<p>I cannot find the solar data site that shows all the common frequencies. This one is all media oriented, but does have a picture that is useful. No way to point to a place in their page &#8211; <span role="gridcell"><a class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h oo483o9r f1sip0of lzcic4wl ljqsnud1 gpro0wi8" tabindex="0" role="link" href="https://www.thesuntoday.org/missions/sdo/?fbclid=IwAR0ldCDVUo9pHW3bSl6lCTDgAv2v5j0_eQk1IUffy2Q7Qz0bOy5q3uQpzyE" target="_blank" rel="nofollow noopener">https://www.thesuntoday.org/missions/sdo/</a></span></p>
+<p>H-alpha is 6563 Angstrom or 656.3 nanometers. That red one (false colored) in the middle is 304 Angstrom or 3040 nm. Any of the shorter wavelengths show the spots easily, but those won&#8217;t go through out atmosphere. Radio will work but you are using optical cameras. Turning up the frame rate, you can get fast enough that the exposureTime * powerDensity * areaSampled is about equal to the middle of the energyPerPhoton/NumberOfPixels needed to get good statistics. The numbers fall into the middle of the range of levels for each color. In the 8 bit cameras &#8212; at about 128 &#8211; even it that is not viewable by a human. Have to separate the capture and storage from the viewing.</p>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calibrating all gravitational sensors into a single imaging array, Measuring speed of gravity as a routine calibration for gravitational networks - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Calibrating all gravitational sensors into a single imaging array, Measuring speed of gravity as a routine calibration for gravitational networks</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2022-08-14</span>
+       &bull; <a href="/?p=5579" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>https://www.researchgate.net/project/Solar-System-Gravimetry-and-Gravitational-Engineering/</p>
+<p>Calibrating all gravitational sensors into a single imaging array:</p>
+<p>I was thinking about this some more. The gravitational potential from the sun and moon changes significantly during the year and over the course of the day. And the absolute values (for the usual network few hundred samples per second and slower) change slowly. Your differences are the same as operating a gradient array. You could put gradiometers/gravimeters at each location to get point estimates for orientation and position of the sensor. But the absolute potentials can also be checked &#8211; because they have to vary during the year, and during the day in a precise way. The LIGO sites ought to be doing that. Their directors seem to be so locked onto distant black holes and things. The signals from the solar system are much stronger and might give a way to put an absolute base on the nanoHertz microHertz and faster variation in the potential.</p>
+<p>I know that the higher vibrational modes of vacuum cantilevers are much more sensitive &#8211; a lot more information in each reading, so the ambiguity is reduced. The same applies to multifrequency methods. The methods I use tracking the time variations of the tidal gravitational acceleration vector signals has a lot in common with synthetic aperture radar (SAR) where you use the geometric constraints of the path or aperture geometry to help save steps and improve resolution.</p>
+<p>I know that the LIGO methods could be adapted to track the moon, sun and planets directly. That is because they are so close. Without JPL&#8217;s precise solar system ephemeris, I could not have used the sun moon vector tidal signal to calibrate the superconducting gravimeters. It is because the JPL positions (velocities if you are doing time dilation) are so easy to calculate and work with &#8211; that these things are simpler. The JPL is hard if you do it by hand or start from scratch. But no one should go that way, unless like me you are checking all the steps and assumptions and alternative pathways.</p>
+<p>Measuring speed of gravity as a routine calibration for gravitational networks:</p>
+<p>There is a method I came up with that might work for you. I was trying to work out guidelines for groups wanting to measure the speed of gravity on the earth, and use those calibrated instrument networks to time of flight image things like seismic waves and atmospheric density variations. And check the low frequency variations from storms and infrasound variations.</p>
+<p>What you do is, rather than taking lots of low resolution samples at regular intervals &#8211; brute force analog to digital methods. Measure bursts of very high sampling rate for very short times. That way you set the memory you can afford, store the data from the sensor as fast as possible as precisesly as possible &#8211; THEN only sample at very precisely determined and planned instants at each site. You can predict when the gravitational potential changes from an event on the sun will get to each station. So you agree to measure at the same moment of arrival at all stations. If you are further away from that event, then you take your samples later.</p>
+<p>The width (start and stop times) of the samples have to be wide enough (enough memory to store samples that fast) has to allow for variations in the speed of gravity signals as a function of frequency. I am fairly certain that &#8220;gravity&#8221; or &#8220;speed of propagation of gravitational potential changes&#8221; depends on the frequency and pathway. In that way of looking at gravity, it is just a part of the electromagnetic spectrum an the measurements are so precise you have to use the whole path model. But for every day things, probably you can just report the equivalent vacuum index of refraction (change the vacuum permittivity and permeability due to gravitational potential changes).</p>
+<p>The time dilation expression I use has the gravitational potential, the velocity potential, and terms for the potential from electric and magnetic fields. You have to use a mass density, and get those terms through the energy density. It is not hard, just tedious.</p>
+<p>If you see that 1/sqrt(1 &#8211; GravitationalPotential/c^2 &#8211; VelocityPotential/c^2) you can multiple top and bottom by C.</p>
+<p>Then inside the square root is a universal potential or Mach&#8217;s potential, C^2 from all the universe minus the various kinds of potential from natural sources like the earth, sun and moon, earthquake density variations, atmospheric density variations. And from electromagnetic sources.</p>
+<p>I see the gravitational signals from distant places in all frequencies up to about YottaHertz, and down to yottoHertz. (uppercase for big, lower case for small, camelCase because it all has to be programmable).</p>
+<p>I am getting tired. I want to write these things down because it took me tens of thousands of small checks to make sure it is about right. Working alone is hard. Having to use other people&#8217;s data is hard. Not having instruments to check a few basic things like speed of gravity is hard. Hundreds of groups can measure speed of gravity, if they tried. It is not hard with high sampling rate analog gravimeters.</p>
+<p>100 GigaSamplesPerSecond ADCs are possible. But 10 Gsps ADCs are affordable. Single bit ADCs at higher rates are possible, but the analog equivalents with precision voltages and resistances are more affordable.</p>
+<p>If you monitor the shape of the waves at a surfers sea shore (big waves regularly) with drones, you can build a 3d model of the ocean surface changes over time. From that you can calculate the 3D vector gravitational acceleration signal at any location and time &#8211; assuming the speed is close to the speed of light. Put a few sensors near but away from the shore, and over time you can match the calculated potential variations (and its gradients) and calibrate the instrument. I assume (if you are using gravimeter or gradiometers) you have already calibrated each node in your array against the vector sun moon tidal signal. The first hurdle for a gravitational sensor for arrays is the sun moon tidal calibration. The next is &#8220;measure speed of gravity&#8221;. And then you can use events like earthquakes, tides, atmosphere, cars and trains &#8211; to track and image things.</p>
+<p>I can&#8217;t make myself write any more. So I will post this and hope to continue later.</p>
+<p>Richard Collins, The Internet Foundation</p>
+<hr />
+<p>Added a few minutes later:</p>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="djsk0-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="djsk0-0-0"><span data-offset-key="djsk0-0-0">If you are near to a weather radar station, or can get the global climate modelers to do a regional model of your location, we should be able to have gravimeter gradiometer &#8220;direct gravitational potential&#8221; sensor arrays to correlate estimates of density and density variations for each voxel in rhe region. The potential is almost purely Newtonian. So GMm/r^2 from each voxel to the sensors and stations.</span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="5qv3p-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5qv3p-0-0"><span data-offset-key="5qv3p-0-0"> </span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="8mhh8-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8mhh8-0-0"><span data-offset-key="8mhh8-0-0">If there is ocean or rivers or water currents or atmospheric rivers use those.</span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="6k6gh-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6k6gh-0-0"><span data-offset-key="6k6gh-0-0"> </span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="6tdn1-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6tdn1-0-0"><span data-offset-key="6tdn1-0-0">If there are highways or trains use those. There are lots of 24/7 camera networks now with AI to identify make and model and scan real models of cars and trucks to use for the calculations.</span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="bs6l7-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bs6l7-0-0"><span data-offset-key="bs6l7-0-0"> </span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="7dfe3-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="7dfe3-0-0"><span data-offset-key="7dfe3-0-0">The seismic waves are pretty well modeled already. Each earthquake the wave propagate in fairly good order. Ask Jan Harms at LIGO if you need help with learning how to do the calculations. But the real insight is to use sensors near a source to get high resolution measurement that more distant sites can use for calibration.</span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="2ng8t-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2ng8t-0-0"><span data-offset-key="2ng8t-0-0"> </span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="2b1pc-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2b1pc-0-0"><span data-offset-key="2b1pc-0-0">The gravitational potential changes &#8220;diffuse&#8221; at the speed of light and gravity. I am fairly certain that there are also things like plumes, channels, shocks, solitons, blobs &#8211; in a complex but familiar pattern of variegated mass signals emitted from complex natural things. In my mind, people walking around the detector can be 3D scanned, modeled (they call it rigging) and use to identify and calibrate instrument signals.</span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="dhjol-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dhjol-0-0"><span data-offset-key="dhjol-0-0"> </span></div>
+</div>
+<div class="" data-block="true" data-editor="ce0" data-offset-key="23ed9-0-0">
+<div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="23ed9-0-0"><span data-offset-key="23ed9-0-0">Richard Collins, The Internet Foundation</span></div>
+<div data-offset-key="23ed9-0-0">
+<hr />
+</div>
+<div data-offset-key="23ed9-0-0">
+<p>Thank you for sharing your research. &#8211; Richard</p>
+<p>I added a few comments, and recommend the paper on ResearchGate. I wrote the comments also as updates on my project for gravitational imaging arrays. There are a few dozen people following. Hope to interest them in your work as well as tie down some basic ideas for gravitational imaging arrays.</p>
+<p>I will look more closely at low cost &#8220;atomic clock chips&#8221; and &#8220;atom interferometer&#8221; and &#8220;electron interferometer&#8221; direct gravitational potential instrument methods. Integration to get potential from gradients is partly an art of getting groups to report regularly and to share.</p>
+<hr />
+</div>
+</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment on Flywheel energy storage experiment video - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Comment on Flywheel energy storage experiment video</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-08-12</span>
+       &bull; <a href="/?p=2194" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>Electrical tests! | 2 Mechanical Battery by Black Sahara at <a href="https://www.youtube.com/watch?v=uiOf_-0aFP8">https://www.youtube.com/watch?v=uiOf_-0aFP8</a></p>
+<hr />
+<p>I like what you are doing or I would not comment. Please get a stand for your camera. Learn to solder. Learn to use sound card oscilloscopes and spreadsheets. Keep up the great work!! Thanks for the videos!!</p>
+<p>Put a &#8220;support&#8221; &#8220;donate&#8221; button somewhere.</p>
+<hr />
+<p><a href="https://en.wikipedia.org/wiki/Flywheel">https://en.wikipedia.org/wiki/Flywheel</a> has the equations you need to calculate how much energy this will store.</p>
+<p>The energy in Joules for a rotating cylinder (yes it is a short cylinder) with radius R in meters is</p>
+<p>EnergyJoules= (1/2) MomentOfInertia * (2 pi Frequency_Hertz)^2</p>
+<p>MomentOfInertia = (1/2) * MassCylinderKilograms * RadiusCylinderMeters^2</p>
+<p>You need know the CurrentAmperes and the VoltageVolts of what you want to power. And how long you are going to provide energy. You can use a sound card oscilloscope with your computer/laptop to measure and record the voltage over time. Take the readings each second and add them up.</p>
+<p>EnergyJoulesForOneSecond = PowerWattsForOneSecond * 1 second</p>
+<p>PowerWatts = CurrentAmperes * VoltageVolts</p>
+<p>EnergyJoules = PowerWatts* TimeSeconds</p>
+<p>VoltageVolts = CurrentAmperes * ResistanceOhms</p>
+<p>PowerWatts = ResistanceOhms * CurrentAmperes^2</p>
+<p>PowerWatts = VoltageVolts^2/ResistanceOhms</p>
+<p>I think that is 66 foot electrical tape at 3/4 inch wide and weight 90.7 grams or 0.0907 Kilograms. The radius is something close to 2.5 centimeters or 0.025 meters.</p>
+<p>The MomentOfInertia is close to (1/2)*(0.0907 kg) * (0.025 meters)^2 = 0.00002834375 KilogramMeterSquared</p>
+<p>EnergyJoules = (1/2) * (2 pi)^2 * MomentOfInertia * FrequencyHertz^2</p>
+<p>EnergyJoules = EnergyWattSeconds = 5.59483*10^-4 WattSecondsPerHertzSquared * FrequencyHertz^2</p>
+<p>EnergyWattSeconds = 0.5595 * F^2 in milliWattSeconds</p>
+<p>1000 RevolutionsPerMinute = 1000/60 RevolutionsPerSecond = 16.667 Rps = 16.667 Hertz</p>
+<p>EnergyWattSeconds = 0.5595 * (16.667 Hertz)^2 = 155.4 milliWatt seconds.</p>
+<p>If you power something that need 1 milliWatt, it will last about 155 seconds, except the power drops off fast and it will only work for a shorter time at that power level.</p>
+<p>It seems like a lot to remember, but put it into a spreadsheet and you don&#8217;t have to remember all the details, just get them right when you set it up. There are going to be flywheel groups all over the Internet, and many many many calculators, models, equations and estimates.</p>
+<p>Here is something more specific to storing energy at <a href="https://en.wikipedia.org/wiki/Flywheel_energy_storage">https://en.wikipedia.org/wiki/Flywheel_energy_storage</a></p>
+<p>While electrical energy is useful, you might want to consider its use for storing angular momentum that can be used directly &#8212; <a href="https://en.wikipedia.org/wiki/Control_moment_gyroscope">https://en.wikipedia.org/wiki/Control_moment_gyroscope</a></p>
+<p>Sincerely,<br />
+Richard Collins, Director, The Internet Foundation</p>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

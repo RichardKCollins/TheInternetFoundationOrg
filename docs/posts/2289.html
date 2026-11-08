@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment on Video about laser interferometer design and use &#8211; replace superconducting gravimeters - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Comment on Video about laser interferometer design and use &#8211; replace superconducting gravimeters</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-08-26</span>
+       &bull; <a href="/?p=2289" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>Counting Atoms with the Doppler Effect &#8211; Heterodyne Interferometer by Sam Zeloof at <a href="http://sam.zeloof.xyz">http://sam.zeloof.xyz</a></p>
+<p><a href="https://www.youtube.com/watch?v=vPu6lN9yJOY">https://www.youtube.com/watch?v=vPu6lN9yJOY</a></p>
+<p>Sam,</p>
+<p>I sent you an email about using this to replace the network of superconducting gravimeters with something more people can afford. You have several orders of magnitude available to you by very small adjustments. SGs cost several hundred thousand and are only single axis. Here is my explanation of what is going on &#8211; https://hackaday.io/project/164550-low-cost-time-of-flight-gravimeter-arrays</p>
+<p>I finally understand the gas lasers and the linear interferometer range of possibilities from your video. I have been reading and studying related things for more than 50 years now. I really appreciate your clarity and insight. With people like you and your smarter brother, there is hope for the future.</p>
+<p>Thank you for pointing me to Sam GoldWasser at https://repairfaq.org/sam/lipm/lipm.htm</p>
+<p>I never knew anyone who made their own MEMS devices at home. Maybe you can try the MEMS gravimeters. I wrote you a little about that.</p>
+<p>Richard Collins, Director, The Internet Foundation</p>
+<hr />
+<div class="default-style">Sam,</div>
+<div class="default-style"></div>
+<div class="default-style" style="padding-left: 40px;">I was watching your video and came to 8:48, and realized that you might be able to make a three axis gravimeter, that is sorely needed.</div>
+<div class="default-style" style="padding-left: 40px;"></div>
+<div class="default-style" style="padding-left: 40px;">The industry standard now is the superconducting gravimeter.  It cost in the $200k range and is only single axis.  It is sensitive to about 0.1 nanometer per second squared (nm/s2) at 1 sample per second (sps).  There are several MEMS gravimeter groups around the world. They get about 1 nm/s2 at 1 sps.  They are basically modified cell phone MEMS accelerometers.  They drift like crazy but because they are sensitive enough to pick up the very large sun moon tidal signal, that only needs a linear regression to lock the signal to the sun and moon.  The MEMS are relatively easy to get in three axis form.</div>
+<div class="default-style" style="padding-left: 40px;"></div>
+<div class="default-style" style="padding-left: 40px;">Could you think about how you could use your linear interferometers to track x y z accelerations?  Your MHz signals can be tracked with low cost software defined radios (SDRs) and laptop can track the F1-F2, REF signals and movement signal.  And use the spectral data to improve resolution and characterization of the gravitational signal sources.</div>
+<div class="default-style"></div>
+<div class="default-style">Richard Collins, Director, The Internet Foundation</div>
+<div class="default-style"></div>
+<div class="default-style">The sun moon tidal signal is just the Newtonian vector tidal signal (sun GMM/r2) acting on the station minus the sun on the center of the earth, plus moon at the station minus moon on the center of the earth.  Plus centrifugal term from station latitude longitude in WGS84 coordinates, rotated into station North East Vertical. The center of earth, sun and moon coordinates are readily available to 10 meter or better accuracy online from the Jet Propulsion Labs solar system ephemeris.  Javascript is all that t is needed.</div>
+<div class="default-style"></div>
+<div class="default-style">Here is what the SG signal looks like for a month at  a quiet station.  Any accelerometer (just differentiate or difference your velocity) will have this signal.  I went through EVERY seismometer in the IRIS.edu system to find that the broadband, long period (120 second up to 360 second) seismometers are best.  ALL three axes match. The horizontal ones are noisier.  Here is what the calculated signal and the actual signal look like for a month of data from one of the SG stations.  The residual in the middle is about 50 nm/s2 peak to peak, and is almost all atmospheric.  Remove the sun moon signal and the residual can be used to image the atmosphere for time of flight gravimeters arrays.  The signal only requires three linear regressions (scale and offset for each xyz axis) and the sum of squares of the residual is so sensitive and so much data you can use it to solve for the latitude and longitude and orientation.  So a &#8220;gravitational GPS&#8221; and &#8220;gravitational compass&#8221;</div>
+<div class="default-style"></div>
+<div class="default-style"><a href="https://hackaday.io/project/164550-low-cost-time-of-flight-gravimeter-arrays">https://hackaday.io/project/164550-low-cost-time-of-flight-gravimeter-arrays</a></div>
+<div></div>
+<div>
+<hr />
+</div>
+<div>
+<p>At about minute 14 you talk about storm fronts. Any accelerometer or gravimeter is affected by the changing gravitational potential from weather systems. There are direct forces from infrasound, wind, diffusion of atoms. And electron flows and radiation field changes. Seismometer networks are also good detectors for storms and weather. Gravimeter arrays can be used to image the atmosphere. I sent you a note about that kind of gravimeter array. There is a group working on part of that, called ATMAC &#8211; Atmospheric attraction computation service. But they are just one group working with the superconducting gravimeter array.</p>
+<p>Atmacs &#8211; Atmospheric attraction computation service. Here is their basic approach to estimating. It is very crude but works for their purposes. http://atmacs.bkg.bund.de/docs/computation.php</p>
+<p>The Japan earthquake registered on both the broadband seismometer array, and the superconducting gravimeter array. So movement of the earth from seismic waves changing the density of voxels in, on and near the earth change the gravitational potential. The gradient of the potential is what the gravimeters (an accelerometer sensitive enough to measure the sun moon tidal signal can be called a gravimeter, my rule). are measuring. There are groups working on &#8220;earthquake early warning&#8221;. I put some notes on that at GravityNotes.Org. There are LIGO groups who also work on earth-based signals, and lots of low frequency electromagnetic signals for imaging the atmosphere and earth interior. Lots going on. But the world needs low cost, time of flight gravimeter arrays.</p>
+<p>The reason you need time of flight and three axis (or direction of arrival) is to resolve the location of the source. The array can determine where the signal is coming from and determine if it is man-made (cars, people, trucks, trains, planes) or natural (ocean waves, seismic waves, electromagnetic, infrasound, ocean currents, river currents, atmospheric rivers, atmospheric currents, magnetic, electromagnetic. It seems like a lot, but there are only about 40 basic technologies and then everyone names their stuff based on the frequencies and power levels.</p>
+<p>For the Internet Foundation, I try to keep track of all these groups to watch how they merge and grow. New industries of the future are forming now, and usually have roots that go back many decades. It is not hard to find them, and trace out their futures. Not hard, just tedious.  I get impatient because I want to tell some of them to hurry up, you are almost there.</p>
+<p>Richard Collins, Director, The Internet Foundation</p>
+</div>
+<div>
+<hr />
+</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

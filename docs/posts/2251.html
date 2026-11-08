@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estimate Direction of a live webcam from position of the moon at known time - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Estimate Direction of a live webcam from position of the moon at known time</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-08-25</span>
+       &bull; <a href="/?p=2251" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-2257" src="/wp-content/uploads/2021/08/Moon-seen-from-Lake-Superior-Marine-Museum-on-24-Aug-2021-about-10-10-pm-Houston-Texas-time-300x169.png" alt="" width="300" height="169" srcset="/wp-content/uploads/2021/08/Moon-seen-from-Lake-Superior-Marine-Museum-on-24-Aug-2021-about-10-10-pm-Houston-Texas-time-300x169.png 300w, /wp-content/uploads/2021/08/Moon-seen-from-Lake-Superior-Marine-Museum-on-24-Aug-2021-about-10-10-pm-Houston-Texas-time-1024x575.png 1024w, /wp-content/uploads/2021/08/Moon-seen-from-Lake-Superior-Marine-Museum-on-24-Aug-2021-about-10-10-pm-Houston-Texas-time-768x432.png 768w, /wp-content/uploads/2021/08/Moon-seen-from-Lake-Superior-Marine-Museum-on-24-Aug-2021-about-10-10-pm-Houston-Texas-time-1536x863.png 1536w, /wp-content/uploads/2021/08/Moon-seen-from-Lake-Superior-Marine-Museum-on-24-Aug-2021-about-10-10-pm-Houston-Texas-time.png 1920w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>I was looking at <a href="https://www.youtube.com/watch?v=9k_sg8rhsgk">https://www.youtube.com/watch?v=9k_sg8rhsgk</a> which is on the roof of the Lake Superior Maritime Visitor Center in Duluth, Minnesota at about 11:30 pm.  The moon was shining brightly on the water.</p>
+<p>From Google maps I found the satellite view, a rough idea of where the camera was pointing, and the latitude and longitude in decimal degrees.</p>
+<p><a href="https://www.google.com/maps/place/Lake+Superior+Marine+Museum/@46.7796017,-92.0922983,623m/data=!3m1!1e3!4m5!3m4!1s0x0:0x9f9b5f3ad6c9e702!8m2!3d46.779847!4d-92.092464">https://www.google.com/maps/place/Lake+Superior+Marine+Museum/@46.7796017,-92.0922983,623m/data=!3m1!1e3!4m5!3m4!1s0x0:0x9f9b5f3ad6c9e702!8m2!3d46.779847!4d-92.092464</a></p>
+<p>I found &#8220;MoonCalc&#8221; at MoonCalc.Org and set the location (left side about 2/3rd &#8220;set lat/lon&#8221;) and used the slider at the top to see the time.  It gave me this URL to improve things later.  I see the decimal lat long, the date and time.  Not sure about &#8220;/1/3&#8221;.</p>
+<p><a href="https://www.mooncalc.org/#/46.6832,-91.9517,3/2021.08.24/22:31/1/3">https://www.mooncalc.org/#/46.6832,-91.9517,3/2021.08.24/22:31/1/3</a></p>
+<p>I took a screen shot to record, since this is live, and I wanted to get the pixel location of the moon relative to the bottom center of the image (1920 * 1080 image is at 960, 1080)</p>
+<p>MoonCalc gives me 6.61 degrees altitude and 101.39 degrees azimuth. That is clockwise from North, and on their map it shows nicely.  So (101.39 &#8211; 90) = 11.29 degrees south of Eastward, and there is a line to show me when the moon would rise, but it was cloudy there and then, so not available to check.  Looks close.</p>
+<p>Editing the screen shot in Windows Paint, I chose the pencil so I could see the x,y coordinates.  The pencil point is easier to see.  Center of the moon is about (1553, 145) pixels in top = 0, and (1553, 1080-145 = 935) in bottom = 0.  I zoomed in a few times to make it easier to center.</p>
+<p>The horizon is a bit hard to see at night, but the moonlight helps.  I think it is about (1080-350 = 730) pixels from the bottom.  And (1553-960 = 593) pixels along the horizon to underneath the moon.  That angle is arctan(593/730) = atan(0.8123288) = 39.08 degree. But too tired to work out the real distances from the image.</p>
+<p>It looks like the camera is pointing north of east, from the satellite view. I clipped the satellite image and put it in Paint. The center of the daytime image is near the end of the pier to the left of the light house.  It is tedious to match the camera image with the satellite view. Different times and shadows.  I think someone moved the trash can.  There is a white box on the roof. I think that is the camera.</p>
+<p>I extended a line horizontally from the camera box (write the number down!) and then one vertically there to the end of the pier where I think the center goes.  That is arctan(126/1063) = 6.77 degree north of east.</p>
+<p><img loading="lazy" decoding="async" class="alignnone wp-image-2261" src="/wp-content/uploads/2021/08/Camera-location-and-directions-closer-look-300x158.png" alt="" width="511" height="269" srcset="/wp-content/uploads/2021/08/Camera-location-and-directions-closer-look-300x158.png 300w, /wp-content/uploads/2021/08/Camera-location-and-directions-closer-look-768x405.png 768w, /wp-content/uploads/2021/08/Camera-location-and-directions-closer-look.png 823w" sizes="auto, (max-width: 511px) 100vw, 511px" /></p>
+<p>I think all cameras should have their camera, its parameters, location and direction published &#8211; if they are a public site.  If it is on the Internet it is public.</p>
+<p>And the elevation of  the moon above the horizon in the image is about (935-730 = 205) pixels.</p>
+<hr />
+<p>Torsten:</p>
+<p>I am trying to calculate the direction of a live webcam from clues in the image, including where the moon is showing. I used your MooncCalc in my draft.</p>
+<p>Here is the link to my notes:  Estimate Direction of a live webcam from position of the moon at known time at<br />
+<a href="/?p=2251">/?p=2251</a></p>
+<p>Have you ever tried this problem of identifying the location of a camera (telescope or any camera) from the position of moon, sun, planets, stars in the image?</p>
+<p>Here is where I used Astrometry.net with stars to find information about another live webcam.<br />
+Calibrating and documenting all images and videos on the Internet &#8211; Half Sky and All Sky Cameras at <a href="/?p=2239">/?p=2239</a></p>
+<p>Richard Collins, Director, The Internet Foundation</p>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another try to explain why gravimeter magnetometer arrays are important - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Another try to explain why gravimeter magnetometer arrays are important</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-06-25</span>
+       &bull; <a href="/?p=1620" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <div>Andy,</div>
+<div></div>
+<div style="padding-left: 40px;">Thanks.  I have searched the Internet almost every day for the last 23 years, and have learned never to think something doesn&#8217;t exist.   Thanks for confirming that there are likely no permanent magnetometer arrays.  There could still be someone who does it for fun, and doesn&#8217;t tell anyone.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I wrote some notes below about what I hoped to do and a bit about why. The images include a vector tidal signal and SG match and what people are getting from the MEMS gravimeters.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">Sorry to bother you, if you are not interested in these things. But I try to write it down while I can.  I think the solar lunar gravitational potential changes partially drive the diurnal magnetic potential variations. I want to check.  And the flows are sometimes turbulent.</div>
+<div style="padding-left: 40px;"></div>
+<div>Richard Collins, Director,  The Internet Foundation</div>
+<div></div>
+<div style="padding-left: 40px;">The attached image is the kind of matches I have seen for the superconducting gravimeter sites. The gray residual is atmospheric.  i am trying to find gravimeter arrays sensitive enough to image and check the 3D atmospheric models. One of the global communities I follow is &#8220;global climate change&#8221;.  I can read many of the datasets and calculate the gravitational signals related to that.  Jan Harms at LIGO is good at some kinds of gravitational signal estimates from seismic data.  He and others are working on earthquake early warning from the gravitational potential changes from seismic waves. There is enough data now from the networks to track the piezomagnetic and piezoelectric signals from earthquakes and earth tides, ocean waves and ocean tides, atmospheric waves and atmospheric tides.  I am putting all those models and groups together for the Internet.</div>
+<div></div>
+<div>
+<div style="padding-left: 40px;">I went to University of Maryland at College Park from 1975-1979 and met the people who were at the core of LIGO and gravitational waves.  Charles Misner was my academic advisor, but I met Joe Weber.  He gave me a tour of his lab one day and told me of his troubles.  He explained that he hoped one day people could use solid state (volume) transmitters for sending complex signals as gravitational signals. And he encouraged me to read the work of Robert Forward (his student) on gravitational detectors and transmitters.  Robert went on to help with LIGO and I met him by email many years later before he died.  Anyway Robert wanted to merge electromagnetism and gravitation.  And they both wanted practical applications. While I was going to UMD, I got a part time job working with Steve Klosko on a NASA project to build the GEM geopotential models.  I wanted to know what is underneath the action of the field.  It has very specific properties. Robert gave an expression for the gravitational energy density.  The gravitational acceleration field at the earth surface is equivalent to a magnetic field of about 379 Tesla.  That huge difference meant the gravitational field had to be more fine grained and of specific sizes and energies.  About one seven millionth the mass of the electron.</div>
+<div style="padding-left: 40px;"></div>
+</div>
+<div style="padding-left: 40px;">Back about 2000 I wanted to measure the speed of gravity, so I used the superconducting gravimeter network as a single array to check.  To do that I needed to have a common standard, and since I had worked on the NASA GEM series of geopotential models (satellite orbits to recover gravity field), I used the JPL solar system ephemeris and calculated the vector Newtonian gravity (three axis) at each location.  The SGs only have one vertical axis and that fit extremely well, but I wanted to check all three axes.  So I spent the better part of a year going through every IRIS seismometer to finally find that the broadband seismometers (some of them) were also good enough, and at quiet sites, to get clean matches on all three axes.  It only requires a linear regression (scale and offset) to find each instrument.  And with only two parameters per channel, and lots of data, instruments can be continuously calibrated.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">VectorSignal = [GMs*(1/Rxs^2 &#8211; 1/Res^2) + GMm*(1/Rxm^2 &#8211; 1/Rem^2) + Centrifugal(lat, long, height)] dot [ North East Vertical unit vectors].</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The sun&#8217;s acceleration at the station minus the sun acting on the center of the earth.  Plus the moon on the station minus the moon on the center of the earth plus centrifugal acceleration at the station.  That gets dotted into the NEV unit vectors for the station. Then a linear regression.  I use JPL Horizon online for many fits. But originally used the Chebychev polynomials.  I am finally getting MatLab and Python to to those calculations.  I wrote them in Turbo Pascal originally, and checked them carefully. Then rewrote parts in Javascript.  For long time series (months) you need to add the earth moon barycenter rotation.  It helps.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The transportable array had a few instruments where I was not sure of the position and orientation, but I found that I could look at the sum of squares of the residuals to improve the location and orientation.  For permanent sites, underground or under the ocean, I always thought that would be a nice &#8220;gravitational GPS&#8221;, but no one has ever seemed interested in that sort of thing.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I spent 6 months on the earth tide models and was going to rewrite Eterna. But Wetzels&#8217; widow would not let me see his notes, so I used the JPL Newtonian model as a backup.  It worked so well and so easily, and it globally accessible as a &#8220;large&#8221; reference signal that I have never gone back. Except that you can start with measurements locked to the sun and moon signal, and then improve locally &#8211; magnetic, atmospheric models, weather, radar, lidar, GPS, infrasound, radiation budget models.  If you are interested I will say more.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">Over the last 15 years I follow every new gravimeter design and ask all the groups to aim for the same thing &#8211; three axis (so each instrument can unambigously be calibrated by the sun moon tidal signal and the position and orientation verified), time of flight sampling rates (GHz, Gsps preferred and usually possible) so that sources can be located and characterized with imaging arrays.  I won&#8217;t bore you.  I care about such things, but no one else does it seems.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">Anyway, a Russian seismomologist on ResearchGate mentioned to me that her seismometers were picking up a lot of magnetic signal.  So I started checking all the global sensor networks to find that, yes, all the instruments pick up other things.  I went back through the seismometer data and found &#8211; storms, wind, gravity, lightning, magnetic storms, pressure and temperature variations.  It is easier to pull out any one signal, and usually there are several confirming networks.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I track the global sensor networks for the Internet Foundation.  The global communities are my main effort to help groups work together more effectively on the Internet.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">So some parts of the puzzle I have been working at for several decades.  In Aug 2017, when GW170817 occurred, that showed that the speed of light and the speed of gravity are identical, not close, identical. That can only be, if they share the same underlying potential field.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I have run calibrations for many instruments using the sun moon vector tidal curves.  They explain about 95% of the variation at the SGs and can be extracted from many of the broadband seismometers (only a few hundred when I started) but once you know how to separate the signals, it gets easier and things that looked too complex before are now possible.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I am writing this out to post with my notes. There are MEMS gravimeters sensitive enough to track the sun moon tidal signals &#8211; they drift like crazy &#8211; but they can be locked to the sun moon signal continuously and there are better statistical methods for removing the large local variations.  I am doing that with the magnetic data now.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The reasons I want to check and use the magnetic arrays are at least three.  (1) Just to clean up the data and find its correlations with other networks, (2) to check if the variations in the gravimeter data are partially magnetic. It seems so, but I wanted to see if there is a fixed relationship depending on the local composition of the earth at each location.  I have checked many &#8220;Big G&#8221; experiments, and want to put some bounds on why they still cannot get better agreement.  (3) I want to use the magnetic and gravitational arrays from nanoHertz to GigaHert to image the interior of the sun, earth, moon and planets &#8212; and to scan the whole of the sky.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The SGs were ambiguous on the speed of gravity.  A tiny change in the time offset made a huge difference in the quality of fit. But single axis SGs meant no way to push that further.  The seismometers are really noisy gravimeters, and the on purpose gravimeters are too low quality to work, and too slow. There are MEMS, Bose Einstein, atom interferometer, electrochemical, and many other gravimeter designs.  LIGO next generation options are many. But for earth and solar system exploration, and for low frequency mixed gravity and electromagnetic surveys of the whole sky &#8211; they are not fast enough and flexible enough.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I made myself go through the LIGO data.  It has taken me several years, and I have been bugging them to improve their online sharing (Internet Foundation fundamentals are the Internet is for everyone &#8211; all 7.8 Billion humans &#8211; not just for those who work on contracts)</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">You probably won&#8217;t get this far.  I can probably help improve the global magnetic arrays. Using the energy density relation (assuming the masses affected by the magnetic and gravitational field are random and in equilibrium) a 1000 nanometer per second squared (nm/s2) daily signal variation is equivalent to 38.7083 Teslas/(m/s2) * 1E-6 (m/s2) = 38.7083E-6 Tesla.  Or 0.387083 Gauss.  The flow of the gravitational potential field produces the magnetic field.  Or, rather the two phenomena on different time scales have the same underlying basis.  Or, the atmospheric tidal response with an atmosphere containing electrons and ions gives the same results magnetically and gravitationally.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I have tried countless ways to visualize the relation between the magnetic fluctuations and gravitational fluctuations.  I think of it in terms of size distribution. The &#8220;magnetic&#8221; are larger and slower, the &#8220;gravitational&#8221; are smaller and finer and faster individually &#8211; but large in number. The &#8220;kT&#8221; noise in many experiments is actually a mixture of gravitational potential field changes, magnetic potential field changes, and many man-made signals.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">I would like to set up five sets of three magnetometers at varying locations around the earth.  In conjunction with seismometers, and next generation gravimeters (there are lots), electromagnetic network monitoring, radio telescopes mostly don&#8217;t share very well, and are too much into frequencies that don&#8217;t penetrate the ionosphere.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">Too tired today to write it out again from memory.  Sorry to bore you with old ideas and hopes.  I think it is important to see if gravity and magnetism are the same thing, just different frequencies and sizes.  It fits many of the things I see when I look at all the global sensor networks.  I have pretty strict methods for standardizing data from many different groups for the whole Internet.  And have to often convert or estimate between gravity and magnetism and other fields.  In energy density terms, it all is stable. But still not easy.  I call it &#8220;not hard, just tedious&#8221;.</div>
+<div></div>
+<div></div>
+<div>Here is what I have seen for almost 20 years now.  The SG signal and the Newtonian vector tidal gravity signal only need a linear regression to fit each axis. The scale is close to a real time Lamb number, and the offset indicates changes in the station.  You can see the helium levels in the offsets for time series of the offset in the SG records.</div>
+<div></div>
+<div><a href="https://gravitynotes.org/HsinchuSample.xlsx">https://gravitynotes.org/HsinchuSample.xlsx</a></div>
+<div></div>
+<div><a href="https://hackaday.io/project/164550-low-cost-time-of-flight-gravimeter-arrays">https://hackaday.io/project/164550-low-cost-time-of-flight-gravimeter-arrays</a></div>
+<div class="gmail_quote">
+<div>
+<div style="padding-left: 40px;"></div>
+</div>
+</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

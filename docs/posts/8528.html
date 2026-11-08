@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambient Acoustic Noise equal to Maximum Solar Power Intensity - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Ambient Acoustic Noise equal to Maximum Solar Power Intensity</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2023-03-07</span>
+       &bull; <a href="/?p=8528" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>The reference sound pressure is 20 microPascal, often referred to as &#8220;limit of human hearing&#8221; in one of those super quiet rooms. Find Common sound pressures on Wikipedia &#8220;Sound pressure&#8221;. You might convert pressure to power</p>
+<p>Pascal = Newtons/meter^2 = Newton*Meters/Meter^3 = Joules/Meter^3 = (Watts/Meter^2)/(Meters/second).</p>
+<p>Pressure = Force/Area = Force*Distance/Area*Distance = Energy/Volume = (Power/Area)/(Velocity)</p>
+<p>Power/Area = Pressure*Velocity = (20*10^-6 Pascal)*(340 Meters/second) in Watts/Meter^2 = 0.0068 Watts/Meter^2</p>
+<p>But search (acoustic background noise levels) and find &#8220;Ambient background noise&#8221; about 60-70 dB and &#8220;quiet suburban neighborhoods&#8221; at 45-50 dB. &#8220;Concert hall&#8221; 25-30 dB (decibels)</p>
+<p>Ambient Pressure Pascals = 10^(dB/10) * ReferencePressure</p>
+<p>UrbanAmbientPressure = 10^(60/10) * 20 microPascal = 20 Pascals &#8211;&gt; (1 atmosphere = 101325 Pascal)<br />
+UrbanAmbientPowerIntensity = PressurePascal * SpeedOfSound = 20 Pascal * 340 Meters/seconds in Watts/meter^2 = 6800 Watts/meter^2</p>
+<p>Solar Power maximum is about 1000 Watts/Meter^2</p>
+<p>Sound level equal to solar power:</p>
+<p>MaximumSolarPowerIntensity is about 1000 Watts/Meter^2</p>
+<p>AcousticPressurePascalSolar = MaximumSolarPowerIntensity/SpeedOfSound = (1000 Watts/Meter^2)/(340 Meters/second)</p>
+<p>AcousticPressurePascalSolar = 2.94 Pascal &#8212;&gt; Note: this is just (1000/6800) * 20 Pascal</p>
+<p>dB for 2.94 Pascal = 10*log10(2.94 Pascal/20E-6 Pascal) = 51.67 dB based on 10 microPascal reference level</p>
+<p>I am using Google for these calculations. They have bug in their calculator program. Log10 does not work, you have to say log10 (lower case)</p>
+<p>So if you live near a highway, where the sound level is high, or near a beach with waves crashing you might use an acoustic harvestor rather than solar.</p>
+<p>By the way</p>
+<p>WindPressurePascal = (1/2) * DensityOfAir * VelocityOfAir^2</p>
+<p>&#8220;Solar Acoustic Pressure&#8221; = 2.94 Pascal = (1/2) * (1.29 Kg/Meter^3) * (Velocity^2)</p>
+<p>SolarAirVelocity = sqrt( (2* 2.94 Pascal)/ (1.29 Kg/Meter^3)) = 2.14 Meters/Second &#8211;&gt; The velocity of air at density 1.29 kg/m^3 to produce a pressure equivalent to acoustic power equal to 1000 Watts/Meter^2.</p>
+<p>This is hard to write in text. Better to make a spreadsheet of HTML/Javascript model that has all the piece connected. Then you check it, and check it, and check it, measure and tests and keep improving. &#8220;1% inspiration, 99% perspiration&#8221; &#8211; Edison</p>
+<p>Note: The Wikipedia article on &#8220;sound pressure&#8221; lists &#8220;thermoacoustic device&#8221; with sound pressure level of 12600 Pascal. And it is hot, so the velocity is higher. PowerIntensity = 12600 Pascal * 1500 meter/second = 18.9 MegaWatts/meter^2</p>
+<p>Richard Collins, The Internet Foundation</p>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>

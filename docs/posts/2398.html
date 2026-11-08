@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Looking for a way to read data from linear image devices in scanners and copiers - The Internet Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <header class="bg-white border-b border-gray-200 py-6 mb-8 shadow-sm">
+    <div class="container mx-auto px-4 max-w-4xl flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold text-blue-800 hover:text-blue-900">The Internet Foundation</a>
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-gray-700">&larr; Back to Archive</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 max-w-4xl bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-3">Looking for a way to read data from linear image devices in scanners and copiers</h1>
+    <div class="text-sm text-gray-500 mb-6 pb-4 border-b border-gray-100">
+      <span>Published: 2021-09-15</span>
+       &bull; <a href="/?p=2398" target="_blank" class="text-blue-600 hover:underline">Original link</a>
+    </div>
+    <article class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
+      <p>I want to read lines from the scanner &#8211; without actually scanning. I want to read the data from the CIS sensor (not camera based, but line based). It is for a scientific experiment related to noise in image sensors. So I don&#8217;t need to scan images, just read line after line &#8211; for days at a time. Is there any way to do this directly, without tearing apart the scanner?</p>
+<p>Any way at all.  I am not an engineer, but physics, computers, statistics. Flatbed and wand and pull through all have the same kind of CIS sensor.</p>
+<p>Thanks.</p>
+<p>&#8220;contact image sensor&#8221;<br />
+&#8220;CIS scanner module&#8221;<br />
+&#8220;CIS sensor&#8221;<br />
+&#8220;linear sensor array&#8221;</p>
+<hr />
+<p>I come up with ideas for gathering data every day. It goes like this: I think the dark noise in these image sensors will be correlated with the magnetic fluctuations being monitored by the global magnetometer arrays. To check that I need to run several sensors at precise locations relative to each other, and store the data on a common network drive (12 TB). With MIPI and other cameras it seems to cost more for the connectors than for the sensors. So there must be a way to buy the raw sensors, put them on a PCB, add processors to take the data from each sensor (on a fixed clock driven schedule) and let the system run for days or weeks needed to check the correlations. Say 10 sensors and 10 processors. The cadence (frames or rows per seconds) is not stringent, but the time for the exposures is important. If the data gathering can be done essentially with hardware, most of the post processing and analysis and statistical monitoring can be done by checking the network files.</p>
+<p>So, I am asking if you can make PCBs and add the parts? Can you lay out lines between standard processors and chips, or is that too hard? I know physics, programming, mathematics, statistics and global scale Internet collaboration. I don&#8217;t want to layout traces on boards, and too old to solder tiny parts.</p>
+<p>Any hope? Any suggestions? I also want to check the contact image sensors that are used in scanner, printers and copiers. They are my preferred choice now for a first project, but I cannot get started, unless there is a way to put the pieces together on a simple board. If it works, it will be a new industry. I am hoping to build arrays to help image the atmosphere to constrain the regional and local climate models. Several sensor networks &#8211; gravimeters, seismometers, magnetometers, infrasound, magnetotelluric, meteorological &#8211; all have corresponding parts of the data needed. I know how to put all the data together. I spent much of the last 20 years checking all the networks. What I need is a low cost and easy to work-with tool for the magnetic signals at low frequencies. I have spent the last few years checking the existing sensors, but I want to try some particular configurations. If they work or are likely they might be good for training others. I could use arrays of photodetectors if they can be queried at Msps (MegaSamplesPerSecond) or Gsps. It is hard to remember electronics for that.</p>
+<p>Richard Collins, Director, The Internet Foundation</p>
+<hr />
+<div>Dustin,</div>
+<div></div>
+<div style="padding-left: 40px;">The terms I use for these kinds of imaging networks is (1) three axis time of flight sensor (2) clusters of sensors (3) arrays of clusters.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">These particular sensors are not larger than a cubic meter, but can be smaller.  I just don&#8217;t want to limit myself if using meter separation will save time of money.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The clusters are sensors usually within tens of meters, or less.  Duplicates to check for local noise sources.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The arrays are city wide, regional or continental.  I have plans for every scale and every field.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">A city like Houston is about 75 kilometers.  It is currently served by one weather radar (Doppler, multilevel scans, relatively slow).  I think it would take about 20 clusters.  In the United States there are about 170 weather radars.  If each can be replaced by 20 sensors, with a few extras for calibration, then about 170*20 = 3400 sensors.  There are already small active radars that could be used to replace the existing active network, but I am looking for a completely passive radar that uses natural magnetic and gravitational noise as its illumination.  And that can be referenced to an absolute standard, so it can work globally in a seamless global network.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">The image sensors (camera or linear image sensor) can be covered and temperature monitored, or they can have uniform illumination.  I have worked out how to just let them &#8220;look&#8221; at anything, but I will try all the different ways and see what works best.  EVERY noise sources is a valuable data stream.  In a seismometer, for instance, there are almost 20 unique data streams &#8211; infrasound, sun moon gravitation, atmospheric gravitation, magnetic, electromagnetic, sferics (lightning), piezo magnetic and piezo electric signals from earth movements, thermal noise sources, many human sources where the source data is available ( a radio station where the songs are available in digital form, so that can be removed and the channel and natural interactions measured.)  Seismometers pick up earthquakes, cars, trucks, trains, planes, people, explosions, storms, wind.  It is very rich and complex &#8211; but it becomes manageable when the data is gather &#8220;time of flight&#8221; so that the time of arrival of the signal at each sensor is unique.  There are about 40 basic sensor types, and they can be used in many combinations.  I have checked most of them individually and in combinations over the last 20 years.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">If I can get some basic tests made, I want to keep adding new sensors &#8211; all on the same plan and methods.  All talking to each other, all with global user groups and developer groups, and all aimed at critical measurements in industry and commerce and society.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">Some of these sensors won&#8217;t work.  When I went through the seismometers, there were hundreds of models and thousands of stations. Only 10 basic types worked well as gravimeters, and only about 30 of hundreds were good clean signals that could be used.  I had no control over their design or operation, so there are limits to what I could do with &#8220;other people&#8217;s data&#8221;.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">You might have heard of Boltzmann&#8217;s constant and thermal noise in electronic circuits.  The atoms and electrons of all matter are in constant motion.  The specific frequencies depend on the atoms and molecules, the electric magnetic and gravitational fields.  You might have heard of &#8220;kT&#8221; noise.  The &#8220;k&#8221; is Boltzmann&#8217;s constant.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">What I found is that electrons and ions and atoms in circuits all have strong local &#8220;kT&#8221; noise from the temperatures and properties of the local matter, but also from nearby matter (in the same room or building). Working with gravitational signals pushes our technology to the limits.  So I got to using time of flight methods for sorting out where the noise comes from. At the surface of the earth, not only is the electromagnetic field (from kT where T is about 300 Kelvin, and from SB*T^4 where SB is the Stefan-Boltzmann constant) but also there is noise from the many sources and atmospheric atoms that influence the magnetic field.  The magnetic field that would be needed to replace the gravitational field (a direct replacement not easily distinguishable from a  natural field) would need portions a field of about 379 Tesla. This is easy now with lasers and masers.</div>
+<div style="padding-left: 40px;"></div>
+<div style="padding-left: 40px;">So I am looking at the dark current and noise in the photo sensors, but there are many ways to use electrons for gravitational detection (tracking the fine scaled magnetic fluctuations we call gravity).  The magnetic field and gravitational field are one field, the properties and phenomena can be distinguished by spatial frequency, energy density and timing. The easiest way to handle it is, just to take 3D Fourier transforms of every signal and use what is called a &#8220;generalized FFT transform&#8221; for which i have simple statistical alternatives that can be implemented on low cost ASICs, FPGAs, MCUs and other little and small processors.</div>
+<div></div>
+<div>Richard Collins, Director, The Internet Foundation</div>
+
+    </article>
+  </main>
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200">
+    <p>The Internet Foundation Archive &bull; Richard Collins</p>
+  </footer>
+</body>
+</html>
